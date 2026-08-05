@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 
@@ -9,12 +12,20 @@ const navigation = [
 ];
 
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <header className="fixed left-0 top-0 z-50 w-full border-b border-white/[0.06] bg-[#050505]/80 backdrop-blur-xl">
       <Container>
         <div className="flex h-20 items-center justify-between">
           {/* Brand */}
-          <a href="#" className="group flex items-center gap-3">
+          <a
+            href="#"
+            onClick={closeMenu}
+            className="flex items-center gap-3"
+          >
             <div className="flex h-9 w-9 items-center justify-center rounded-full border border-[#C9A45C]/40">
               <span className="font-[var(--font-cinzel)] text-sm font-semibold text-[#C9A45C]">
                 K
@@ -38,31 +49,80 @@ export default function Navbar() {
               <a
                 key={item.label}
                 href={item.href}
-                className="relative text-sm text-neutral-400 transition-colors duration-300 hover:text-white"
+                className="text-sm text-neutral-400 transition-colors duration-300 hover:text-white"
               >
                 {item.label}
-
-                <span className="absolute -bottom-2 left-0 h-px w-0 bg-[#C9A45C] transition-all duration-300 hover:w-full" />
               </a>
             ))}
           </nav>
 
-          {/* CTA */}
+          {/* Desktop CTA */}
           <div className="hidden lg:block">
             <Button>Start a Project</Button>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Button */}
           <button
             type="button"
-            aria-label="Open navigation"
-            className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 rounded-lg border border-white/10 lg:hidden"
+            aria-label={menuOpen ? "Close navigation" : "Open navigation"}
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((current) => !current)}
+            className="relative flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 lg:hidden"
           >
-            <span className="h-px w-5 bg-white" />
-            <span className="h-px w-5 bg-white" />
+            <span
+              className={`absolute h-px w-5 bg-white transition-transform duration-300 ${
+                menuOpen ? "rotate-45" : "-translate-y-[4px]"
+              }`}
+            />
+
+            <span
+              className={`absolute h-px w-5 bg-white transition-all duration-300 ${
+                menuOpen
+                  ? "-rotate-45"
+                  : "translate-y-[4px]"
+              }`}
+            />
           </button>
         </div>
       </Container>
+
+      {/* Mobile Navigation */}
+      <div
+        className={`overflow-hidden border-t border-white/[0.06] bg-[#050505]/95 backdrop-blur-xl transition-all duration-500 lg:hidden ${
+          menuOpen
+            ? "max-h-[500px] opacity-100"
+            : "max-h-0 border-transparent opacity-0"
+        }`}
+      >
+        <Container>
+          <nav className="flex flex-col py-7">
+            {navigation.map((item, index) => (
+              <a
+                key={item.label}
+                href={item.href}
+                onClick={closeMenu}
+                className="flex items-center justify-between border-b border-white/[0.06] py-5"
+              >
+                <span className="text-lg text-neutral-200">
+                  {item.label}
+                </span>
+
+                <span className="text-xs text-[#C9A45C]">
+                  0{index + 1}
+                </span>
+              </a>
+            ))}
+
+            <a
+              href="#contact"
+              onClick={closeMenu}
+              className="mt-7 flex items-center justify-center rounded-xl border border-[#C9A45C] bg-[#C9A45C] px-7 py-4 text-sm font-semibold text-[#050505]"
+            >
+              Start a Project
+            </a>
+          </nav>
+        </Container>
+      </div>
     </header>
   );
 }
