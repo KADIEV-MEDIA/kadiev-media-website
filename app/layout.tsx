@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   title: "Kadiev Media | Premium AI-First Creative Studio",
   description:
     "Premium branding, UI/UX design, web development and AI-powered digital experiences.",
+  other: {
+    google: "notranslate",
+  },
 };
 
 export default function RootLayout({
@@ -28,8 +31,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      translate="no"
       suppressHydrationWarning
-      className={`${cinzel.variable} ${inter.variable}`}
+      className={`notranslate ${cinzel.variable} ${inter.variable}`}
     >
       <body>{children}</body>
     </html>

@@ -1,5 +1,6 @@
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
+import Reveal from "@/components/motion/Reveal";
 
 export default function FinalCTA() {
   return (
@@ -20,55 +21,65 @@ export default function FinalCTA() {
       <Container>
         <div className="relative mx-auto max-w-5xl text-center">
           {/* Eyebrow */}
-          <div className="flex items-center justify-center gap-4">
-            <span className="h-px w-10 bg-[#C9A45C]" />
+          <Reveal>
+            <div className="flex items-center justify-center gap-4">
+              <span className="h-px w-10 bg-[#C9A45C]" />
 
-            <p className="text-xs uppercase tracking-[0.35em] text-[#C9A45C]">
-              Start a Project
-            </p>
+              <p className="text-xs uppercase tracking-[0.35em] text-[#C9A45C]">
+                Start a Project
+              </p>
 
-            <span className="h-px w-10 bg-[#C9A45C]" />
-          </div>
+              <span className="h-px w-10 bg-[#C9A45C]" />
+            </div>
+          </Reveal>
 
           {/* Headline */}
-          <h2 className="mt-8 text-4xl font-semibold leading-[1.12] text-white md:text-6xl lg:text-7xl">
-            Have an Ambitious Idea?
-            <span className="block text-[#C9A45C]">
-              Let&apos;s Make It Real.
-            </span>
-          </h2>
+          <Reveal delay={0.1}>
+            <h2 className="mt-8 text-4xl font-semibold leading-[1.12] text-white md:text-6xl lg:text-7xl">
+              Have an Ambitious Idea?
+              <span className="block text-[#C9A45C]">
+                Let&apos;s Make It Real.
+              </span>
+            </h2>
+          </Reveal>
 
           {/* Description */}
-          <p className="mx-auto mt-8 max-w-2xl text-base leading-8 text-neutral-400 md:text-lg">
-            Tell us where you want your brand to go. We&apos;ll bring together
-            strategy, design, technology and AI to help you get there.
-          </p>
+          <Reveal delay={0.2}>
+            <p className="mx-auto mt-8 max-w-2xl text-base leading-8 text-neutral-400 md:text-lg">
+              Tell us where you want your brand to go. We&apos;ll bring together
+              strategy, design, technology and AI to help you get there.
+            </p>
+          </Reveal>
 
           {/* CTA */}
-          <div className="mt-11">
-            <Button>Start Your Project</Button>
-          </div>
+          <Reveal delay={0.3}>
+            <div className="mt-11">
+              <Button>Start Your Project</Button>
+            </div>
+          </Reveal>
 
           {/* Bottom metadata */}
-          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-3 border-t border-white/[0.08] pt-8">
-            <div>
-              <p className="text-xs uppercase tracking-[0.2em] text-neutral-500">
-                Strategy
-              </p>
-            </div>
+          <Reveal delay={0.4}>
+            <div className="mx-auto mt-16 grid max-w-2xl grid-cols-3 border-t border-white/[0.08] pt-8">
+              <div>
+                <p className="text-[10px] uppercase tracking-[0.12em] text-neutral-500 sm:text-xs sm:tracking-[0.2em]">
+                  Strategy
+                </p>
+              </div>
 
-            <div className="border-x border-white/[0.08]">
-              <p className="text-xs uppercase tracking-[0.2em] text-neutral-500">
-                Creativity
-              </p>
-            </div>
+              <div className="border-x border-white/[0.08]">
+                <p className="text-[10px] uppercase tracking-[0.12em] text-neutral-500 sm:text-xs sm:tracking-[0.2em]">
+                  Creativity
+                </p>
+              </div>
 
-            <div>
-              <p className="text-xs uppercase tracking-[0.2em] text-neutral-500">
-                Intelligence
-              </p>
+              <div>
+                <p className="text-[10px] uppercase tracking-[0.12em] text-neutral-500 sm:text-xs sm:tracking-[0.2em]">
+                  Intelligence
+                </p>
+              </div>
             </div>
-          </div>
+          </Reveal>
         </div>
       </Container>
     </section>
