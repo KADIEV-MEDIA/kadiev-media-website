@@ -1,55 +1,101 @@
 import Section from "@/components/ui/Section";
 import Container from "@/components/ui/Container";
-import Card from "@/components/ui/Card";
 
 const testimonials = [
   {
     quote:
-      "Kadiev Media combines premium design thinking with modern technology in a way that feels both strategic and distinctive.",
+      "Kadiev Media combines strategic thinking, premium design and modern technology into one clear creative direction.",
     name: "Aurelia",
-    role: "Luxury Brand Concept",
+    role: "Luxury Beauty Concept",
+    number: "01",
   },
   {
     quote:
-      "The process feels focused, refined and built around creating real long-term value instead of short-term visual trends.",
+      "The approach feels considered and intentional — every detail exists to strengthen the identity and digital experience.",
     name: "NordHaus",
-    role: "Architecture Concept",
+    role: "Architecture & Lifestyle Concept",
+    number: "02",
   },
   {
     quote:
-      "From positioning to digital execution, every detail is designed to strengthen the perception of the brand.",
+      "A strong balance between visual impact, business thinking and the technology required to bring ambitious ideas to life.",
     name: "AutoLux",
-    role: "Automotive Concept",
+    role: "Premium Automotive Concept",
+    number: "03",
   },
 ];
 
 export default function Testimonials() {
   return (
-    <Section className="bg-neutral-950">
+    <Section className="bg-[#080808]">
       <Container>
-        <div className="text-center">
-          <p className="text-sm uppercase tracking-[0.35em] text-yellow-500">
-            Testimonials
-          </p>
+        {/* Header */}
+        <div className="grid gap-10 border-b border-white/[0.08] pb-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+          <div>
+            <p className="text-xs uppercase tracking-[0.35em] text-[#C9A45C]">
+              Selected Perspectives
+            </p>
 
-          <h2 className="mt-6 text-4xl font-bold text-white md:text-5xl">
-            Built Around Quality
-          </h2>
+            <h2 className="mt-6 text-4xl font-semibold leading-tight text-white md:text-5xl">
+              Built Around
+              <span className="block text-[#C9A45C]">
+                Lasting Value.
+              </span>
+            </h2>
+          </div>
+
+          <p className="max-w-xl leading-8 text-neutral-400 lg:justify-self-end">
+            Every engagement is approached as a partnership between strategy,
+            creativity and technology.
+          </p>
         </div>
 
-        <div className="mt-16 grid gap-8 lg:grid-cols-3">
-          {testimonials.map((item) => (
-            <Card key={item.name}>
-              <p className="text-lg leading-8 text-neutral-300">
-                “{item.quote}”
-              </p>
-
-              <div className="mt-8 border-t border-neutral-800 pt-6">
-                <p className="font-semibold text-white">{item.name}</p>
-                <p className="mt-1 text-sm text-neutral-500">{item.role}</p>
+        {/* Testimonials */}
+        <div className="divide-y divide-white/[0.08]">
+          {testimonials.map((testimonial) => (
+            <article
+              key={testimonial.number}
+              className="group grid gap-8 py-12 lg:grid-cols-[100px_1fr_260px] lg:items-start"
+            >
+              {/* Number */}
+              <div>
+                <span className="text-xs tracking-[0.3em] text-[#C9A45C]">
+                  {testimonial.number}
+                </span>
               </div>
-            </Card>
+
+              {/* Quote */}
+              <blockquote className="max-w-3xl">
+                <span className="font-[var(--font-cinzel)] text-4xl leading-none text-[#C9A45C]/40">
+                  “
+                </span>
+
+                <p className="-mt-2 text-xl leading-9 text-neutral-200 md:text-2xl">
+                  {testimonial.quote}
+                </p>
+              </blockquote>
+
+              {/* Client */}
+              <div className="lg:text-right">
+                <p className="font-[var(--font-cinzel)] text-lg text-white transition-colors duration-300 group-hover:text-[#C9A45C]">
+                  {testimonial.name}
+                </p>
+
+                <p className="mt-2 text-xs uppercase tracking-[0.18em] text-neutral-500">
+                  {testimonial.role}
+                </p>
+              </div>
+            </article>
           ))}
+        </div>
+
+        {/* Bottom detail */}
+        <div className="flex items-center gap-4 border-t border-white/[0.08] pt-8">
+          <span className="h-px w-10 bg-[#C9A45C]" />
+
+          <p className="text-[10px] uppercase tracking-[0.3em] text-neutral-500">
+            Strategy / Design / Technology / Intelligence
+          </p>
         </div>
       </Container>
     </Section>

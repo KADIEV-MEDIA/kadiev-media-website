@@ -3,59 +3,84 @@ import Container from "@/components/ui/Container";
 
 const questions = [
   {
+    number: "01",
     question: "What services does Kadiev Media provide?",
     answer:
-      "We combine brand strategy, UI/UX design, web development, creative production and AI-powered solutions.",
+      "We combine brand strategy, visual identity, UI/UX design, web development, creative production and AI-powered solutions into complete digital experiences.",
   },
   {
-    question: "What types of businesses do you work with?",
+    number: "02",
+    question: "Who do you work with?",
     answer:
-      "We work with ambitious brands and businesses that value premium design, strong positioning and modern technology.",
+      "We work with ambitious businesses, founders and brands that value strong positioning, premium design and modern technology.",
   },
   {
-    question: "Do you build complete websites?",
+    number: "03",
+    question: "Can you handle the complete website process?",
     answer:
-      "Yes. We can handle the complete process from strategy and UI/UX design through development, optimization and launch.",
+      "Yes. We can take a project from strategy and creative direction through UI/UX design, development, optimization and launch.",
   },
   {
-    question: "How is AI used in your process?",
+    number: "04",
+    question: "How do you use artificial intelligence?",
     answer:
-      "AI supports research, creative exploration, content production, automation and optimization while strategic and creative decisions remain human-led.",
+      "AI supports research, creative exploration, production, automation and optimization while strategic and creative direction remains human-led.",
   },
 ];
 
 export default function FAQ() {
   return (
-    <Section className="border-t border-neutral-900 bg-neutral-950">
+    <Section className="bg-[#050505]">
       <Container>
-        <div className="grid gap-16 lg:grid-cols-[0.8fr_1.2fr]">
-          <div>
-            <p className="text-sm uppercase tracking-[0.35em] text-yellow-500">
-              FAQ
+        <div className="grid gap-16 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
+          {/* Left */}
+          <div className="lg:sticky lg:top-32 lg:self-start">
+            <p className="text-xs uppercase tracking-[0.35em] text-[#C9A45C]">
+              Frequently Asked
             </p>
 
-            <h2 className="mt-6 text-4xl font-bold text-white md:text-5xl">
+            <h2 className="mt-6 text-4xl font-semibold leading-tight text-white md:text-5xl">
               Questions,
-              <span className="block text-yellow-500">Answered.</span>
+              <span className="block text-[#C9A45C]">
+                Answered.
+              </span>
             </h2>
 
-            <p className="mt-6 max-w-md leading-7 text-neutral-400">
-              Everything you need to know before starting a project with
-              Kadiev Media.
+            <p className="mt-7 max-w-md leading-8 text-neutral-400">
+              A few things worth knowing before we start building something
+              exceptional together.
             </p>
+
+            <div className="mt-10 flex items-center gap-4">
+              <span className="h-px w-10 bg-[#C9A45C]" />
+
+              <p className="text-[10px] uppercase tracking-[0.3em] text-neutral-500">
+                Kadiev Media / FAQ
+              </p>
+            </div>
           </div>
 
-          <div className="divide-y divide-neutral-800 border-y border-neutral-800">
+          {/* Questions */}
+          <div className="border-t border-white/[0.08]">
             {questions.map((item) => (
-              <div key={item.question} className="py-8">
-                <h3 className="text-xl font-semibold text-white">
-                  {item.question}
-                </h3>
+              <article
+                key={item.number}
+                className="group grid gap-5 border-b border-white/[0.08] py-9 md:grid-cols-[70px_1fr]"
+              >
+                <span className="text-xs tracking-[0.25em] text-[#C9A45C]">
+                  {item.number}
+                </span>
 
-                <p className="mt-4 leading-7 text-neutral-400">
-                  {item.answer}
-                </p>
-              </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-white transition-colors duration-300 group-hover:text-[#C9A45C] md:text-2xl">
+                    {item.question}
+                  </h3>
+
+                  <p className="mt-5 max-w-2xl leading-7 text-neutral-400">
+                    {item.answer}
+                  </p>
+                </div>
+              </article>
             ))}
           </div>
         </div>

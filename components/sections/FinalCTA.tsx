@@ -3,27 +3,71 @@ import Button from "@/components/ui/Button";
 
 export default function FinalCTA() {
   return (
-    <section className="relative overflow-hidden bg-black py-28">
-      <div className="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-yellow-500/10 blur-[180px]" />
+    <section className="relative overflow-hidden border-t border-white/[0.08] bg-[#080808] py-28 md:py-36">
+      {/* Ambient glow */}
+      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#C9A45C]/[0.07] blur-[180px]" />
+
+      {/* Grid */}
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.025]"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(255,255,255,0.7) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.7) 1px, transparent 1px)",
+          backgroundSize: "70px 70px",
+        }}
+      />
 
       <Container>
-        <div className="relative mx-auto max-w-4xl text-center">
-          <p className="text-sm uppercase tracking-[0.35em] text-yellow-500">
-            Start a Project
-          </p>
+        <div className="relative mx-auto max-w-5xl text-center">
+          {/* Eyebrow */}
+          <div className="flex items-center justify-center gap-4">
+            <span className="h-px w-10 bg-[#C9A45C]" />
 
-          <h2 className="mt-6 text-4xl font-bold leading-tight text-white md:text-6xl">
-            Ready to Build Something
-            <span className="block text-yellow-500">Exceptional?</span>
+            <p className="text-xs uppercase tracking-[0.35em] text-[#C9A45C]">
+              Start a Project
+            </p>
+
+            <span className="h-px w-10 bg-[#C9A45C]" />
+          </div>
+
+          {/* Headline */}
+          <h2 className="mt-8 text-4xl font-semibold leading-[1.12] text-white md:text-6xl lg:text-7xl">
+            Have an Ambitious Idea?
+            <span className="block text-[#C9A45C]">
+              Let&apos;s Make It Real.
+            </span>
           </h2>
 
-          <p className="mx-auto mt-7 max-w-2xl text-lg leading-8 text-neutral-400">
-            Let&apos;s create a premium digital experience designed around your
-            brand, your goals and your future growth.
+          {/* Description */}
+          <p className="mx-auto mt-8 max-w-2xl text-base leading-8 text-neutral-400 md:text-lg">
+            Tell us where you want your brand to go. We&apos;ll bring together
+            strategy, design, technology and AI to help you get there.
           </p>
 
-          <div className="mt-10">
+          {/* CTA */}
+          <div className="mt-11">
             <Button>Start Your Project</Button>
+          </div>
+
+          {/* Bottom metadata */}
+          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-3 border-t border-white/[0.08] pt-8">
+            <div>
+              <p className="text-xs uppercase tracking-[0.2em] text-neutral-500">
+                Strategy
+              </p>
+            </div>
+
+            <div className="border-x border-white/[0.08]">
+              <p className="text-xs uppercase tracking-[0.2em] text-neutral-500">
+                Creativity
+              </p>
+            </div>
+
+            <div>
+              <p className="text-xs uppercase tracking-[0.2em] text-neutral-500">
+                Intelligence
+              </p>
+            </div>
           </div>
         </div>
       </Container>

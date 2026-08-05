@@ -1,20 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cinzel, Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const cinzel = Cinzel({
+  variable: "--font-cinzel",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Kadiev Media",
-  description: "Premium AI-First Creative Studio",
+  title: "Kadiev Media | Premium AI-First Creative Studio",
+  description:
+    "Premium branding, UI/UX design, web development and AI-powered digital experiences.",
 };
 
 export default function RootLayout({
@@ -24,13 +27,11 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="bg"
+      lang="en"
       suppressHydrationWarning
-      className={`${geistSans.variable} ${geistMono.variable}`}
+      className={`${cinzel.variable} ${inter.variable}`}
     >
-      <body className="min-h-screen bg-black text-white">
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
