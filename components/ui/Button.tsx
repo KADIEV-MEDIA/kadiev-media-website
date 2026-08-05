@@ -1,22 +1,23 @@
-import { ButtonProps } from "@/types";
+interface ButtonProps {
+  children: React.ReactNode;
+  variant?: "primary" | "secondary";
+}
 
 export default function Button({
   children,
   variant = "primary",
 }: ButtonProps) {
-  const base =
-    "rounded-xl px-8 py-4 font-semibold transition-all duration-300";
-
-  const variants = {
+  const styles = {
     primary:
-      "bg-yellow-500 text-black hover:scale-105 hover:shadow-[0_0_30px_rgba(212,175,55,0.35)]",
-
+      "bg-yellow-500 text-black hover:scale-105",
     secondary:
       "border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black",
   };
 
   return (
-    <button className={`${base} ${variants[variant]}`}>
+    <button
+      className={`rounded-xl px-6 py-3 font-semibold transition ${styles[variant]}`}
+    >
       {children}
     </button>
   );
