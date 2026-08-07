@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { MouseEvent, useState } from "react";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
@@ -15,7 +15,9 @@ const navigation = [
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+
   const pathname = usePathname();
+  const router = useRouter();
 
   const closeMenu = () => setMenuOpen(false);
 
@@ -40,6 +42,42 @@ export default function Navbar() {
 
       window.history.replaceState(null, "", "/#process");
     }
+  };
+
+  const handleMobileNavigation = (
+    event: MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    event.preventDefault();
+
+    setMenuOpen(false);
+
+    router.push(href);
+  };
+
+  const handleMobileProcess = (
+    event: MouseEvent<HTMLAnchorElement>
+  ) => {
+    event.preventDefault();
+
+    setMenuOpen(false);
+
+    if (pathname === "/") {
+      const processSection = document.getElementById("process");
+
+      if (processSection) {
+        processSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+
+        window.history.replaceState(null, "", "/#process");
+      }
+
+      return;
+    }
+
+    router.push("/#process");
   };
 
   return (
@@ -131,11 +169,14 @@ export default function Navbar() {
               <Link
                 key={item.label}
                 href={item.href}
-                onClick={
-                  item.label === "Process"
-                    ? handleProcessClick
-                    : closeMenu
-                }
+                onClick={(event) => {
+                  if (item.label === "Process") {
+                    handleMobileProcess(event);
+                    return;
+                  }
+
+                  handleMobileNavigation(event, item.href);
+                }}
                 className="flex items-center justify-between border-b border-white/[0.06] py-5"
               >
                 <span className="text-lg text-neutral-200">
@@ -150,7 +191,9 @@ export default function Navbar() {
 
             <Link
               href="/contact"
-              onClick={closeMenu}
+              onClick={(event) =>
+                handleMobileNavigation(event, "/contact")
+              }
               className="mt-7 flex items-center justify-center rounded-xl border border-[#C9A45C] bg-[#C9A45C] px-7 py-4 text-sm font-semibold text-[#050505]"
             >
               Start a Project

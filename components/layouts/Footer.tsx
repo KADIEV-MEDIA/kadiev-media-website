@@ -1,12 +1,18 @@
+"use client";
+
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
+import { MouseEvent } from "react";
+
 import Container from "@/components/ui/Container";
 import Reveal from "@/components/motion/Reveal";
 
 const navigation = [
-  { label: "Home", href: "#" },
-  { label: "Services", href: "#services" },
-  { label: "Work", href: "#work" },
-  { label: "Process", href: "#process" },
-  { label: "About", href: "#about" },
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/services" },
+  { label: "Work", href: "/work" },
+  { label: "Process", href: "/#process" },
+  { label: "About", href: "/about" },
 ];
 
 const services = [
@@ -18,6 +24,49 @@ const services = [
 ];
 
 export default function Footer() {
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const handleHomeClick = (
+    event: MouseEvent<HTMLAnchorElement>
+  ) => {
+    event.preventDefault();
+
+    if (pathname === "/") {
+      window.history.replaceState(null, "", "/");
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+
+      return;
+    }
+
+    router.push("/");
+  };
+
+  const handleProcessClick = (
+    event: MouseEvent<HTMLAnchorElement>
+  ) => {
+    if (pathname !== "/") {
+      return;
+    }
+
+    event.preventDefault();
+
+    const processSection = document.getElementById("process");
+
+    if (processSection) {
+      processSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+
+      window.history.replaceState(null, "", "/#process");
+    }
+  };
+
   return (
     <footer className="border-t border-white/[0.08] bg-[#050505]">
       <Container>
@@ -26,7 +75,12 @@ export default function Footer() {
           <div className="grid gap-16 py-20 md:py-24 lg:grid-cols-[1.4fr_0.6fr_0.7fr_0.8fr]">
             {/* Brand */}
             <div>
-              <a href="#" className="inline-flex items-center gap-4">
+              <Link
+                href="/"
+                onClick={handleHomeClick}
+                className="inline-flex items-center gap-4"
+                aria-label="Kadiev Media — Home"
+              >
                 <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#C9A45C]/40 transition-all duration-300 hover:border-[#C9A45C]">
                   <span className="font-[var(--font-cinzel)] text-base font-semibold text-[#C9A45C]">
                     K
@@ -42,7 +96,7 @@ export default function Footer() {
                     Media
                   </p>
                 </div>
-              </a>
+              </Link>
 
               <p className="mt-7 max-w-sm leading-7 text-neutral-400">
                 Premium AI-first creative studio combining strategy, design,
@@ -66,13 +120,20 @@ export default function Footer() {
 
               <nav className="mt-6 flex flex-col gap-4">
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.label}
                     href={item.href}
+                    onClick={
+                      item.label === "Home"
+                        ? handleHomeClick
+                        : item.label === "Process"
+                          ? handleProcessClick
+                          : undefined
+                    }
                     className="text-sm text-neutral-400 transition-colors duration-300 hover:text-white"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 ))}
               </nav>
             </div>
@@ -85,7 +146,10 @@ export default function Footer() {
 
               <div className="mt-6 flex flex-col gap-4">
                 {services.map((service) => (
-                  <p key={service} className="text-sm text-neutral-400">
+                  <p
+                    key={service}
+                    className="text-sm text-neutral-400"
+                  >
                     {service}
                   </p>
                 ))}
@@ -106,7 +170,9 @@ export default function Footer() {
                   hello@kadievmedia.com
                 </a>
 
-                <p className="mt-4 text-sm text-neutral-500">Germany</p>
+                <p className="mt-4 text-sm text-neutral-500">
+                  Germany
+                </p>
               </div>
 
               <div className="mt-8">
@@ -127,26 +193,9 @@ export default function Footer() {
           <p>© 2026 Kadiev Media. All rights reserved.</p>
 
           <div className="flex flex-wrap gap-7">
-            <a
-              href="#"
-              className="transition-colors duration-300 hover:text-neutral-300"
-            >
-              Privacy
-            </a>
-
-            <a
-              href="#"
-              className="transition-colors duration-300 hover:text-neutral-300"
-            >
-              Terms
-            </a>
-
-            <a
-              href="#"
-              className="transition-colors duration-300 hover:text-neutral-300"
-            >
-              Imprint
-            </a>
+            <span>Privacy</span>
+            <span>Terms</span>
+            <span>Imprint</span>
           </div>
         </div>
       </Container>
