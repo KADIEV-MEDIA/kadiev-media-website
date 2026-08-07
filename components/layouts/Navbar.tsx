@@ -1,28 +1,54 @@
 "use client";
 
-import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { MouseEvent, useState } from "react";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 
 const navigation = [
-  { label: "Services", href: "#services" },
-  { label: "Work", href: "#work" },
-  { label: "Process", href: "#process" },
-  { label: "About", href: "#about" },
+  { label: "Services", href: "/services" },
+  { label: "Work", href: "/work" },
+  { label: "Process", href: "/#process" },
+  { label: "About", href: "/about" },
 ];
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const closeMenu = () => setMenuOpen(false);
+
+  const handleProcessClick = (
+    event: MouseEvent<HTMLAnchorElement>
+  ) => {
+    closeMenu();
+
+    if (pathname !== "/") {
+      return;
+    }
+
+    event.preventDefault();
+
+    const processSection = document.getElementById("process");
+
+    if (processSection) {
+      processSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+
+      window.history.replaceState(null, "", "/#process");
+    }
+  };
 
   return (
     <header className="fixed left-0 top-0 z-50 w-full border-b border-white/[0.06] bg-[#050505]/80 backdrop-blur-xl">
       <Container>
         <div className="flex h-20 items-center justify-between">
           {/* Brand */}
-          <a
-            href="#"
+          <Link
+            href="/"
             onClick={closeMenu}
             className="flex items-center gap-3"
           >
@@ -41,24 +67,31 @@ export default function Navbar() {
                 Media
               </p>
             </div>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden items-center gap-9 lg:flex">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.label}
                 href={item.href}
+                onClick={
+                  item.label === "Process"
+                    ? handleProcessClick
+                    : undefined
+                }
                 className="text-sm text-neutral-400 transition-colors duration-300 hover:text-white"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
           {/* Desktop CTA */}
           <div className="hidden lg:block">
-            <Button>Start a Project</Button>
+            <Link href="/contact">
+              <Button>Start a Project</Button>
+            </Link>
           </div>
 
           {/* Mobile Button */}
@@ -77,9 +110,7 @@ export default function Navbar() {
 
             <span
               className={`absolute h-px w-5 bg-white transition-all duration-300 ${
-                menuOpen
-                  ? "-rotate-45"
-                  : "translate-y-[4px]"
+                menuOpen ? "-rotate-45" : "translate-y-[4px]"
               }`}
             />
           </button>
@@ -97,10 +128,14 @@ export default function Navbar() {
         <Container>
           <nav className="flex flex-col py-7">
             {navigation.map((item, index) => (
-              <a
+              <Link
                 key={item.label}
                 href={item.href}
-                onClick={closeMenu}
+                onClick={
+                  item.label === "Process"
+                    ? handleProcessClick
+                    : closeMenu
+                }
                 className="flex items-center justify-between border-b border-white/[0.06] py-5"
               >
                 <span className="text-lg text-neutral-200">
@@ -110,16 +145,16 @@ export default function Navbar() {
                 <span className="text-xs text-[#C9A45C]">
                   0{index + 1}
                 </span>
-              </a>
+              </Link>
             ))}
 
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               onClick={closeMenu}
               className="mt-7 flex items-center justify-center rounded-xl border border-[#C9A45C] bg-[#C9A45C] px-7 py-4 text-sm font-semibold text-[#050505]"
             >
               Start a Project
-            </a>
+            </Link>
           </nav>
         </Container>
       </div>

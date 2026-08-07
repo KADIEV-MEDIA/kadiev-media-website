@@ -31,7 +31,7 @@ const steps = [
 
 export default function Process() {
   return (
-    <Section className="bg-[#080808]">
+     <Section id="process" className="bg-[#080808]">
       <Container>
         <div className="grid gap-16 lg:grid-cols-[0.85fr_1.15fr] lg:gap-24">
           {/* Intro */}
