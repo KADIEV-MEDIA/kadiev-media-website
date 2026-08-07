@@ -1,8 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { MouseEvent, useState } from "react";
+
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 
@@ -81,7 +83,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed left-0 top-0 z-50 w-full border-b border-white/[0.06] bg-[#050505]/80 backdrop-blur-xl">
+    <header className="fixed left-0 top-0 z-50 w-full border-b border-white/[0.06] bg-[#050505]/85 backdrop-blur-xl">
       <Container>
         <div className="flex h-20 items-center justify-between">
           {/* Brand */}
@@ -89,13 +91,21 @@ export default function Navbar() {
             href="/"
             onClick={closeMenu}
             className="flex items-center gap-3"
+            aria-label="Kadiev Media Home"
           >
-            <div className="flex h-9 w-9 items-center justify-center rounded-full border border-[#C9A45C]/40">
-              <span className="font-[var(--font-cinzel)] text-sm font-semibold text-[#C9A45C]">
-                K
-              </span>
+            {/* KM Logo */}
+            <div className="relative h-11 w-11 shrink-0 overflow-hidden rounded-full bg-[#050505]">
+              <Image
+                src="/brand/kadiev-media-logo.png"
+                alt="Kadiev Media"
+                fill
+                priority
+                sizes="44px"
+                className="scale-[1.2] object-cover object-center"
+              />
             </div>
 
+            {/* Wordmark */}
             <div>
               <p className="font-[var(--font-cinzel)] text-lg font-semibold tracking-[0.08em] text-white">
                 KADIEV
@@ -132,23 +142,31 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Mobile Button */}
+          {/* Mobile Menu Button */}
           <button
             type="button"
-            aria-label={menuOpen ? "Close navigation" : "Open navigation"}
+            aria-label={
+              menuOpen ? "Close navigation" : "Open navigation"
+            }
             aria-expanded={menuOpen}
-            onClick={() => setMenuOpen((current) => !current)}
+            onClick={() =>
+              setMenuOpen((current) => !current)
+            }
             className="relative flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 lg:hidden"
           >
             <span
               className={`absolute h-px w-5 bg-white transition-transform duration-300 ${
-                menuOpen ? "rotate-45" : "-translate-y-[4px]"
+                menuOpen
+                  ? "rotate-45"
+                  : "-translate-y-[4px]"
               }`}
             />
 
             <span
               className={`absolute h-px w-5 bg-white transition-all duration-300 ${
-                menuOpen ? "-rotate-45" : "translate-y-[4px]"
+                menuOpen
+                  ? "-rotate-45"
+                  : "translate-y-[4px]"
               }`}
             />
           </button>
@@ -175,7 +193,10 @@ export default function Navbar() {
                     return;
                   }
 
-                  handleMobileNavigation(event, item.href);
+                  handleMobileNavigation(
+                    event,
+                    item.href
+                  );
                 }}
                 className="flex items-center justify-between border-b border-white/[0.06] py-5"
               >
@@ -192,7 +213,10 @@ export default function Navbar() {
             <Link
               href="/contact"
               onClick={(event) =>
-                handleMobileNavigation(event, "/contact")
+                handleMobileNavigation(
+                  event,
+                  "/contact"
+                )
               }
               className="mt-7 flex items-center justify-center rounded-xl border border-[#C9A45C] bg-[#C9A45C] px-7 py-4 text-sm font-semibold text-[#050505]"
             >

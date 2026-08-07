@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { MouseEvent } from "react";
@@ -55,7 +56,8 @@ export default function Footer() {
 
     event.preventDefault();
 
-    const processSection = document.getElementById("process");
+    const processSection =
+      document.getElementById("process");
 
     if (processSection) {
       processSection.scrollIntoView({
@@ -63,7 +65,11 @@ export default function Footer() {
         block: "start",
       });
 
-      window.history.replaceState(null, "", "/#process");
+      window.history.replaceState(
+        null,
+        "",
+        "/#process"
+      );
     }
   };
 
@@ -71,24 +77,29 @@ export default function Footer() {
     <footer className="border-t border-white/[0.08] bg-[#050505]">
       <Container>
         <Reveal>
-          {/* Main Footer */}
           <div className="grid gap-16 py-20 md:py-24 lg:grid-cols-[1.4fr_0.6fr_0.7fr_0.8fr]">
             {/* Brand */}
             <div>
               <Link
                 href="/"
                 onClick={handleHomeClick}
-                className="inline-flex items-center gap-4"
-                aria-label="Kadiev Media — Home"
+                className="inline-flex items-center gap-5"
+                aria-label="Kadiev Media Home"
               >
-                <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#C9A45C]/40 transition-all duration-300 hover:border-[#C9A45C]">
-                  <span className="font-[var(--font-cinzel)] text-base font-semibold text-[#C9A45C]">
-                    K
-                  </span>
+                {/* KM Mark */}
+                <div className="relative h-[64px] w-[64px] shrink-0">
+                  <Image
+                    src="/brand/kadiev-media-logo.png"
+                    alt="Kadiev Media"
+                    fill
+                    sizes="64px"
+                    className="scale-[1.45] object-contain"
+                  />
                 </div>
 
+                {/* Wordmark */}
                 <div>
-                  <p className="font-[var(--font-cinzel)] text-xl font-semibold tracking-[0.08em] text-white">
+                  <p className="font-[var(--font-cinzel)] text-[22px] font-semibold tracking-[0.08em] text-white">
                     KADIEV
                   </p>
 
@@ -99,8 +110,9 @@ export default function Footer() {
               </Link>
 
               <p className="mt-7 max-w-sm leading-7 text-neutral-400">
-                Premium AI-first creative studio combining strategy, design,
-                technology and intelligent systems.
+                Premium AI-first creative studio combining
+                strategy, design, technology and intelligent
+                systems.
               </p>
 
               <div className="mt-8 flex items-center gap-4">
@@ -112,7 +124,7 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Navigation */}
+            {/* Explore */}
             <div>
               <p className="text-xs uppercase tracking-[0.25em] text-[#C9A45C]">
                 Explore
@@ -138,7 +150,7 @@ export default function Footer() {
               </nav>
             </div>
 
-            {/* Services */}
+            {/* Capabilities */}
             <div>
               <p className="text-xs uppercase tracking-[0.25em] text-[#C9A45C]">
                 Capabilities
@@ -190,7 +202,9 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="flex flex-col gap-6 border-t border-white/[0.08] py-8 text-xs text-neutral-600 md:flex-row md:items-center md:justify-between">
-          <p>© 2026 Kadiev Media. All rights reserved.</p>
+          <p>
+            © 2026 Kadiev Media. All rights reserved.
+          </p>
 
           <div className="flex flex-wrap gap-7">
             <span>Privacy</span>
