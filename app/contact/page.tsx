@@ -12,18 +12,10 @@ const projectTypes = [
   "Creative Systems",
 ];
 
-const budgetRanges = [
-  "€2K — €5K",
-  "€5K — €10K",
-  "€10K — €20K",
-  "€20K+",
-];
-
 type FormStatus = "idle" | "loading" | "success" | "error";
 
 export default function ContactPage() {
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
-  const [selectedBudget, setSelectedBudget] = useState("");
   const [status, setStatus] = useState<FormStatus>("idle");
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -38,12 +30,6 @@ export default function ContactPage() {
     setErrorMessage("");
   };
 
-  const handleBudget = (budget: string) => {
-    setSelectedBudget(budget);
-    setStatus("idle");
-    setErrorMessage("");
-  };
-
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
@@ -54,20 +40,22 @@ export default function ContactPage() {
     const email = String(formData.get("email") || "").trim();
     const company = String(formData.get("company") || "").trim();
     const website = String(formData.get("website") || "").trim();
+    const budget = String(formData.get("budget") || "").trim();
     const timeline = String(formData.get("timeline") || "").trim();
     const message = String(formData.get("message") || "").trim();
 
     if (
       !name ||
       !email ||
+      !budget ||
       !message ||
-      selectedServices.length === 0 ||
-      !selectedBudget
+      selectedServices.length === 0
     ) {
       setStatus("error");
       setErrorMessage(
-        "Please complete your name, email, project description, select at least one service and choose an estimated budget."
+        "Please complete your name, email, estimated budget, project description and select at least one service."
       );
+
       return;
     }
 
@@ -86,7 +74,7 @@ export default function ContactPage() {
           company,
           website,
           services: selectedServices,
-          budget: selectedBudget,
+          budget,
           timeline,
           message,
         }),
@@ -101,7 +89,6 @@ export default function ContactPage() {
       setStatus("success");
       form.reset();
       setSelectedServices([]);
-      setSelectedBudget("");
     } catch (error) {
       setStatus("error");
 
@@ -145,9 +132,49 @@ export default function ContactPage() {
             </Reveal>
 
             <Reveal delay={0.08}>
-              <h1 className="max-w-6xl font-serif text-[clamp(3rem,8vw,7rem)] leading-[0.95] tracking-[-0.04em]">
-                Let&apos;s build something
-                <span className="block text-[#C9A45C]">remarkable.</span>
+              <h1
+                className="
+                  flex
+                  max-w-[19rem]
+                  flex-col
+                  gap-2
+                  font-serif
+                  text-[2.8rem]
+                  font-normal
+                  tracking-[-0.04em]
+
+                  min-[390px]:max-w-[22rem]
+                  min-[390px]:text-[3.05rem]
+
+                  sm:max-w-[35rem]
+                  sm:gap-3
+                  sm:text-[3.9rem]
+
+                  md:max-w-[43rem]
+                  md:text-[4.6rem]
+
+                  lg:max-w-[50rem]
+                  lg:gap-4
+                  lg:text-[5.1rem]
+
+                  xl:max-w-[56rem]
+                  xl:text-[5.6rem]
+
+                  2xl:max-w-[60rem]
+                  2xl:text-[6rem]
+                "
+              >
+                <span className="block leading-[1.06]">
+                  Let&apos;s build
+                </span>
+
+                <span className="block leading-[1.06]">
+                  something
+                </span>
+
+                <span className="block leading-[1.06] text-[#C9A45C]">
+                  remarkable.
+                </span>
               </h1>
             </Reveal>
 
@@ -180,7 +207,9 @@ export default function ContactPage() {
 
                 <h2 className="mt-6 max-w-md font-serif text-4xl leading-tight tracking-[-0.03em] sm:text-5xl">
                   Give us the
-                  <span className="block text-white/35">full picture.</span>
+                  <span className="block text-white/35">
+                    full picture.
+                  </span>
                 </h2>
 
                 <p className="mt-8 max-w-md text-base leading-8 text-white/45">
@@ -197,12 +226,15 @@ export default function ContactPage() {
                     <p className="text-sm text-white/55">
                       Brand &amp; digital identity
                     </p>
+
                     <p className="text-sm text-white/55">
                       Premium websites
                     </p>
+
                     <p className="text-sm text-white/55">
                       AI-powered content systems
                     </p>
+
                     <p className="text-sm text-white/55">
                       Creative transformation
                     </p>
@@ -213,6 +245,7 @@ export default function ContactPage() {
 
             <Reveal delay={0.08}>
               <form onSubmit={handleSubmit} noValidate className="space-y-10">
+                {/* Name / Email */}
                 <div className="grid gap-8 sm:grid-cols-2">
                   <div>
                     <label
@@ -255,6 +288,7 @@ export default function ContactPage() {
                   </div>
                 </div>
 
+                {/* Company / Website */}
                 <div className="grid gap-8 sm:grid-cols-2">
                   <div>
                     <label
@@ -294,6 +328,7 @@ export default function ContactPage() {
                   </div>
                 </div>
 
+                {/* Services */}
                 <div>
                   <p className="text-xs uppercase tracking-[0.22em] text-white/45">
                     What do you need? *
@@ -323,35 +358,38 @@ export default function ContactPage() {
                   </div>
                 </div>
 
+                {/* Estimated Budget */}
                 <div>
-                  <p className="text-xs uppercase tracking-[0.22em] text-white/45">
+                  <label
+                    htmlFor="budget"
+                    className="text-xs uppercase tracking-[0.22em] text-white/45"
+                  >
                     Estimated Budget *
-                  </p>
+                  </label>
 
-                  <div className="mt-5 flex flex-wrap gap-3">
-                    {budgetRanges.map((budget) => {
-                      const active = selectedBudget === budget;
+                  <div className="relative mt-4">
+                    <span className="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 text-base text-[#C9A45C]">
+                      €
+                    </span>
 
-                      return (
-                        <button
-                          key={budget}
-                          type="button"
-                          aria-pressed={active}
-                          disabled={status === "loading"}
-                          onClick={() => handleBudget(budget)}
-                          className={`border px-4 py-3 text-xs uppercase tracking-[0.16em] transition-all duration-300 disabled:cursor-not-allowed disabled:opacity-50 ${
-                            active
-                              ? "border-[#C9A45C] bg-[#C9A45C] text-black"
-                              : "border-white/15 text-white/50 hover:border-[#C9A45C] hover:text-[#C9A45C]"
-                          }`}
-                        >
-                          {budget}
-                        </button>
-                      );
-                    })}
+                    <input
+                      id="budget"
+                      name="budget"
+                      type="text"
+                      inputMode="text"
+                      placeholder="Enter your estimated budget"
+                      disabled={status === "loading"}
+                      onChange={() => setStatus("idle")}
+                      className="w-full border-b border-white/15 bg-transparent pb-4 pl-6 text-base text-white outline-none transition-colors placeholder:text-white/20 focus:border-[#C9A45C] disabled:cursor-not-allowed disabled:opacity-50"
+                    />
                   </div>
+
+                  <p className="mt-3 text-xs leading-5 text-white/25">
+                    Enter the budget that feels right for your project.
+                  </p>
                 </div>
 
+                {/* Timeline */}
                 <div>
                   <label
                     htmlFor="timeline"
@@ -370,6 +408,7 @@ export default function ContactPage() {
                   />
                 </div>
 
+                {/* Message */}
                 <div>
                   <label
                     htmlFor="message"
@@ -389,6 +428,7 @@ export default function ContactPage() {
                   />
                 </div>
 
+                {/* Error */}
                 {status === "error" && (
                   <div
                     role="alert"
@@ -400,6 +440,7 @@ export default function ContactPage() {
                   </div>
                 )}
 
+                {/* Success */}
                 {status === "success" && (
                   <div
                     role="status"
@@ -411,6 +452,7 @@ export default function ContactPage() {
                   </div>
                 )}
 
+                {/* Submit */}
                 <div className="border-t border-white/10 pt-8">
                   <button
                     type="submit"
