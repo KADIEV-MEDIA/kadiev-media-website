@@ -1,6 +1,26 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/motion/Reveal";
+
+export const metadata: Metadata = {
+  title: "FitLab — AI Fitness Case Study",
+
+  description:
+    "Explore FitLab, a Kadiev Media AI fitness case study combining brand strategy, visual identity, product design and an intelligent performance experience.",
+
+  openGraph: {
+    title: "FitLab — AI Fitness | Kadiev Media",
+    description:
+      "An intelligent fitness platform combining personalized training, performance data and a bold digital experience.",
+  },
+
+  twitter: {
+    title: "FitLab — AI Fitness | Kadiev Media",
+    description:
+      "An intelligent fitness platform combining personalized training, performance data and a bold digital experience.",
+  },
+};
 
 const projectDetails = [
   ["Client", "FitLab"],
@@ -163,7 +183,9 @@ export default function FitLabCaseStudyPage() {
               <div>
                 <h2 className="max-w-4xl font-serif text-4xl leading-[1.08] tracking-[-0.035em] sm:text-5xl lg:text-7xl">
                   Make intelligence
-                  <span className="block text-white/30">feel motivating.</span>
+                  <span className="block text-white/30">
+                    feel motivating.
+                  </span>
                 </h2>
 
                 <p className="mt-10 max-w-2xl text-base leading-8 text-white/50 sm:text-lg">
@@ -339,7 +361,9 @@ export default function FitLabCaseStudyPage() {
 
                 <h2 className="mt-8 max-w-3xl font-serif text-4xl leading-[1.08] tracking-[-0.035em] sm:text-5xl lg:text-7xl">
                   Data that
-                  <span className="block text-white/30">drives action.</span>
+                  <span className="block text-white/30">
+                    drives action.
+                  </span>
                 </h2>
               </div>
 

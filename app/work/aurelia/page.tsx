@@ -1,6 +1,26 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/motion/Reveal";
+
+export const metadata: Metadata = {
+  title: "Aurelia — Luxury Beauty Case Study",
+
+  description:
+    "Explore Aurelia, a Kadiev Media luxury beauty case study combining brand strategy, visual identity, premium digital experience and an AI-powered creative system.",
+
+  openGraph: {
+    title: "Aurelia — Luxury Beauty | Kadiev Media",
+    description:
+      "A premium beauty identity and digital experience shaped around elegance, restraint and timeless luxury.",
+  },
+
+  twitter: {
+    title: "Aurelia — Luxury Beauty | Kadiev Media",
+    description:
+      "A premium beauty identity and digital experience shaped around elegance, restraint and timeless luxury.",
+  },
+};
 
 const projectDetails = [
   ["Client", "Aurelia"],

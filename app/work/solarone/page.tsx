@@ -1,6 +1,26 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/motion/Reveal";
+
+export const metadata: Metadata = {
+  title: "SolarOne — Clean Energy Case Study",
+
+  description:
+    "Explore SolarOne, a Kadiev Media clean energy case study combining brand strategy, visual identity, digital experience and intelligent energy systems.",
+
+  openGraph: {
+    title: "SolarOne — Clean Energy | Kadiev Media",
+    description:
+      "A future-facing clean energy identity designed to make solar technology feel intelligent, desirable and built for scale.",
+  },
+
+  twitter: {
+    title: "SolarOne — Clean Energy | Kadiev Media",
+    description:
+      "A future-facing clean energy identity designed to make solar technology feel intelligent, desirable and built for scale.",
+  },
+};
 
 const projectDetails = [
   ["Client", "SolarOne"],
@@ -162,7 +182,9 @@ export default function SolarOneCaseStudyPage() {
               <div>
                 <h2 className="max-w-4xl font-serif text-4xl leading-[1.08] tracking-[-0.035em] sm:text-5xl lg:text-7xl">
                   Make sustainability
-                  <span className="block text-white/30">feel aspirational.</span>
+                  <span className="block text-white/30">
+                    feel aspirational.
+                  </span>
                 </h2>
 
                 <p className="mt-10 max-w-2xl text-base leading-8 text-white/50 sm:text-lg">

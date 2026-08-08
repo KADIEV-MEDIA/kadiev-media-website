@@ -1,6 +1,26 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/motion/Reveal";
+
+export const metadata: Metadata = {
+  title: "AutoLux — Luxury Automotive Case Study",
+
+  description:
+    "Explore AutoLux, a Kadiev Media luxury automotive case study combining brand strategy, visual identity, premium web design and performance-driven creative direction.",
+
+  openGraph: {
+    title: "AutoLux — Luxury Automotive | Kadiev Media",
+    description:
+      "A high-performance automotive identity and digital experience created around power, precision and uncompromising luxury.",
+  },
+
+  twitter: {
+    title: "AutoLux — Luxury Automotive | Kadiev Media",
+    description:
+      "A high-performance automotive identity and digital experience created around power, precision and uncompromising luxury.",
+  },
+};
 
 const projectDetails = [
   ["Client", "AutoLux"],

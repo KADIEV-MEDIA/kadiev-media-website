@@ -1,6 +1,26 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/motion/Reveal";
+
+export const metadata: Metadata = {
+  title: "NordHaus — Architecture & Interior Case Study",
+
+  description:
+    "Explore NordHaus, a Kadiev Media architecture and interior case study combining brand strategy, visual identity, premium web design and architectural content.",
+
+  openGraph: {
+    title: "NordHaus — Architecture & Interior | Kadiev Media",
+    description:
+      "A refined architectural identity and digital experience built around space, materiality, structure and modern restraint.",
+  },
+
+  twitter: {
+    title: "NordHaus — Architecture & Interior | Kadiev Media",
+    description:
+      "A refined architectural identity and digital experience built around space, materiality, structure and modern restraint.",
+  },
+};
 
 const projectDetails = [
   ["Client", "NordHaus"],
