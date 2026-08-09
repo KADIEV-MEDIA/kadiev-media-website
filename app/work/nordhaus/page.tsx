@@ -9,10 +9,16 @@ export const metadata: Metadata = {
   description:
     "Explore NordHaus, a Kadiev Media architecture and interior case study combining brand strategy, visual identity, premium web design and architectural content.",
 
+    
+  alternates: {
+    canonical: "/work/nordhaus",
+  },
+
   openGraph: {
     title: "NordHaus — Architecture & Interior | Kadiev Media",
     description:
       "A refined architectural identity and digital experience built around space, materiality, structure and modern restraint.",
+    url: "/work/nordhaus",
   },
 
   twitter: {

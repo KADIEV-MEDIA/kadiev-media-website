@@ -1,3 +1,24 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Work",
+  description:
+    "Explore selected Kadiev Media projects across luxury branding, digital experiences, web design and AI-powered creative systems.",
+  alternates: {
+    canonical: "/work",
+  },
+  openGraph: {
+    title: "Work | Kadiev Media",
+    description:
+      "Selected brand identities, digital experiences and AI-powered creative systems created by Kadiev Media.",
+    url: "/work",
+  },
+  twitter: {
+    title: "Work | Kadiev Media",
+    description:
+      "Selected brand identities, digital experiences and AI-powered creative systems created by Kadiev Media.",
+  },
+};
 import Image from "next/image";
 import Reveal from "@/components/motion/Reveal";
 

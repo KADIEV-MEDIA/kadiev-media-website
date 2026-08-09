@@ -9,10 +9,15 @@ export const metadata: Metadata = {
   description:
     "Explore FitLab, a Kadiev Media AI fitness case study combining brand strategy, visual identity, product design and an intelligent performance experience.",
 
+  alternates: {
+    canonical: "/work/fitlab",
+  },
+
   openGraph: {
     title: "FitLab — AI Fitness | Kadiev Media",
     description:
       "An intelligent fitness platform combining personalized training, performance data and a bold digital experience.",
+    url: "/work/fitlab",
   },
 
   twitter: {

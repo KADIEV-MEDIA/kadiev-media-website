@@ -9,10 +9,15 @@ export const metadata: Metadata = {
   description:
     "Explore Aurelia, a Kadiev Media luxury beauty case study combining brand strategy, visual identity, premium digital experience and an AI-powered creative system.",
 
+  alternates: {
+    canonical: "/work/aurelia",
+  },
+
   openGraph: {
     title: "Aurelia — Luxury Beauty | Kadiev Media",
     description:
       "A premium beauty identity and digital experience shaped around elegance, restraint and timeless luxury.",
+    url: "/work/aurelia",
   },
 
   twitter: {

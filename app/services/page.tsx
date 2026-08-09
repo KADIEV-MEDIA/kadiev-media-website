@@ -1,15 +1,21 @@
 import type { Metadata } from "next";
 import Reveal from "@/components/motion/Reveal";
+
 export const metadata: Metadata = {
   title: "Services",
 
   description:
     "Explore Kadiev Media services across brand strategy, visual identity, UI/UX and web design, modern web development, AI-powered content and scalable creative systems.",
 
+  alternates: {
+    canonical: "/services",
+  },
+
   openGraph: {
     title: "Services | Kadiev Media",
     description:
       "Strategy, design, development and AI combined into premium digital systems for ambitious brands.",
+    url: "/services",
   },
 
   twitter: {

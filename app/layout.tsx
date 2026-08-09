@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Cinzel, Inter } from "next/font/google";
+import { siteConfig } from "@/lib/site";
+import StructuredData from "@/components/seo/StructuredData";
 import "./globals.css";
 
 const cinzel = Cinzel({
@@ -15,6 +17,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
+
   title: {
     default: "Kadiev Media | Premium AI-First Creative Studio",
     template: "%s | Kadiev Media",
@@ -79,6 +83,7 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+
     googleBot: {
       index: true,
       follow: true,
@@ -105,7 +110,10 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`notranslate ${cinzel.variable} ${inter.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <StructuredData />
+        {children}
+      </body>
     </html>
   );
 }

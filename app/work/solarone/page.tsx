@@ -9,10 +9,15 @@ export const metadata: Metadata = {
   description:
     "Explore SolarOne, a Kadiev Media clean energy case study combining brand strategy, visual identity, digital experience and intelligent energy systems.",
 
+alternates: {
+    canonical: "/work/solarone"
+  },
+
   openGraph: {
     title: "SolarOne — Clean Energy | Kadiev Media",
     description:
       "A future-facing clean energy identity designed to make solar technology feel intelligent, desirable and built for scale.",
+      url: "/work/solarone",
   },
 
   twitter: {

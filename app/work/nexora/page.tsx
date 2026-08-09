@@ -8,11 +8,17 @@ export const metadata: Metadata = {
 
   description:
     "Explore Nexora, a Kadiev Media AI technology case study combining brand strategy, visual identity, digital product design and intelligent AI systems.",
+    
+
+  alternates: {
+    canonical: "/work/nexora",
+  },
 
   openGraph: {
     title: "Nexora — AI Technology | Kadiev Media",
     description:
       "A future-focused AI brand and digital system designed around intelligence, connection and adaptive technology.",
+    url: "/work/nexora",
   },
 
   twitter: {

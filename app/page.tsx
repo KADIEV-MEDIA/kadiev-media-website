@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 
@@ -10,6 +12,16 @@ import WhyKadiev from "@/components/sections/WhyKadiev";
 import Testimonials from "@/components/sections/Testimonials";
 import FAQ from "@/components/sections/FAQ";
 import FinalCTA from "@/components/sections/FinalCTA";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    url: "/",
+  },
+};
 
 export default function Home() {
   return (

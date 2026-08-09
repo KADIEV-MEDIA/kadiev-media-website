@@ -1,5 +1,28 @@
+import type { Metadata } from "next";
 import Reveal from "@/components/motion/Reveal";
 
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Discover Kadiev Media — an AI-first creative studio combining strategy, premium design, modern development and intelligent production to build distinctive brands and digital experiences.",
+
+  alternates: {
+    canonical: "/about",
+  },
+
+  openGraph: {
+    title: "About | Kadiev Media",
+    description:
+      "An AI-first creative studio where strategy, human creativity, technology and intelligent production work as one connected system.",
+    url: "/about",
+  },
+
+  twitter: {
+    title: "About | Kadiev Media",
+    description:
+      "An AI-first creative studio where strategy, human creativity, technology and intelligent production work as one connected system.",
+  },
+};
 const principles = [
   {
     number: "01",
