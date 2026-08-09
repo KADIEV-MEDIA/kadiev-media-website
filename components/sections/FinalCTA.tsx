@@ -1,12 +1,13 @@
+import Link from "next/link";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import Reveal from "@/components/motion/Reveal";
 
 export default function FinalCTA() {
   return (
-    <section className="relative overflow-hidden border-t border-white/[0.08] bg-[#080808] py-28 md:py-36">
+    <section className="relative overflow-hidden">
       {/* Ambient glow */}
-      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#C9A45C]/[0.07] blur-[180px]" />
+      <div className="pointer-events-none absolute inset-0" />
 
       {/* Grid */}
       <div
@@ -54,7 +55,9 @@ export default function FinalCTA() {
           {/* CTA */}
           <Reveal delay={0.3}>
             <div className="mt-11">
-              <Button>Start Your Project</Button>
+              <Link href="/contact">
+                <Button>Start Your Project</Button>
+              </Link>
             </div>
           </Reveal>
 

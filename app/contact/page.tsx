@@ -180,12 +180,12 @@ export default function ContactPage() {
 
             <Reveal delay={0.16}>
               <div className="mt-10 grid gap-8 border-t border-white/10 pt-8 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
-                <p className="max-w-2xl text-base leading-8 text-white/60 sm:text-lg">
+                <p className="max-w-2xl text-base leading-8 text-neutral-300 sm:text-lg">
                   Tell us what you&apos;re building, what needs to change and
                   where you want the brand to go.
                 </p>
 
-                <p className="max-w-xl text-sm leading-7 text-white/40 sm:text-base lg:justify-self-end">
+                <p className="max-w-xl text-sm leading-7 text-neutral-400 sm:text-base lg:justify-self-end">
                   The clearer the context, the better we can understand the
                   challenge and recommend the right direction.
                 </p>
@@ -207,35 +207,35 @@ export default function ContactPage() {
 
                 <h2 className="mt-6 max-w-md font-serif text-4xl leading-tight tracking-[-0.03em] sm:text-5xl">
                   Give us the
-                  <span className="block text-white/35">
+                  <span className="block text-[#C9A45C]">
                     full picture.
                   </span>
                 </h2>
 
-                <p className="mt-8 max-w-md text-base leading-8 text-white/45">
+                <p className="mt-8 max-w-md text-base leading-8 text-neutral-300">
                   Share the essentials below. This gives us enough context to
                   understand the opportunity before we start a conversation.
                 </p>
 
                 <div className="mt-12 border-t border-white/10 pt-8">
-                  <p className="text-xs uppercase tracking-[0.25em] text-white/30">
+                  <p className="text-xs uppercase tracking-[0.25em] text-neutral-400">
                     Typical Projects
                   </p>
 
                   <div className="mt-6 space-y-4">
-                    <p className="text-sm text-white/55">
+                    <p className="text-sm text-neutral-300">
                       Brand &amp; digital identity
                     </p>
 
-                    <p className="text-sm text-white/55">
+                    <p className="text-sm text-neutral-300">
                       Premium websites
                     </p>
 
-                    <p className="text-sm text-white/55">
+                    <p className="text-sm text-neutral-300">
                       AI-powered content systems
                     </p>
 
-                    <p className="text-sm text-white/55">
+                    <p className="text-sm text-neutral-300">
                       Creative transformation
                     </p>
                   </div>
@@ -250,7 +250,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="name"
-                      className="text-xs uppercase tracking-[0.22em] text-white/45"
+                      className="text-xs uppercase tracking-[0.22em] text-neutral-300"
                     >
                       Name *
                     </label>
@@ -263,14 +263,14 @@ export default function ContactPage() {
                       placeholder="Your name"
                       disabled={status === "loading"}
                       onChange={() => setStatus("idle")}
-                      className="mt-4 w-full border-b border-white/15 bg-transparent pb-4 text-base text-white outline-none transition-colors placeholder:text-white/20 focus:border-[#C9A45C] disabled:cursor-not-allowed disabled:opacity-50"
+                      className="mt-4 w-full border-b border-white/15 bg-transparent pb-4 text-base text-white outline-none transition-colors placeholder:text-neutral-500 focus:border-[#C9A45C] disabled:cursor-not-allowed disabled:opacity-50"
                     />
                   </div>
 
                   <div>
                     <label
                       htmlFor="email"
-                      className="text-xs uppercase tracking-[0.22em] text-white/45"
+                      className="text-xs uppercase tracking-[0.22em] text-neutral-300"
                     >
                       Email *
                     </label>
@@ -283,7 +283,7 @@ export default function ContactPage() {
                       placeholder="you@company.com"
                       disabled={status === "loading"}
                       onChange={() => setStatus("idle")}
-                      className="mt-4 w-full border-b border-white/15 bg-transparent pb-4 text-base text-white outline-none transition-colors placeholder:text-white/20 focus:border-[#C9A45C] disabled:cursor-not-allowed disabled:opacity-50"
+                      className="mt-4 w-full border-b border-white/15 bg-transparent pb-4 text-base text-white outline-none transition-colors placeholder:text-neutral-500 focus:border-[#C9A45C] disabled:cursor-not-allowed disabled:opacity-50"
                     />
                   </div>
                 </div>
@@ -293,7 +293,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="company"
-                      className="text-xs uppercase tracking-[0.22em] text-white/45"
+                      className="text-xs uppercase tracking-[0.22em] text-neutral-300"
                     >
                       Company
                     </label>
@@ -305,14 +305,14 @@ export default function ContactPage() {
                       autoComplete="organization"
                       placeholder="Company or brand"
                       disabled={status === "loading"}
-                      className="mt-4 w-full border-b border-white/15 bg-transparent pb-4 text-base text-white outline-none transition-colors placeholder:text-white/20 focus:border-[#C9A45C] disabled:cursor-not-allowed disabled:opacity-50"
+                      className="mt-4 w-full border-b border-white/15 bg-transparent pb-4 text-base text-white outline-none transition-colors placeholder:text-neutral-500 focus:border-[#C9A45C] disabled:cursor-not-allowed disabled:opacity-50"
                     />
                   </div>
 
                   <div>
                     <label
                       htmlFor="website"
-                      className="text-xs uppercase tracking-[0.22em] text-white/45"
+                      className="text-xs uppercase tracking-[0.22em] text-neutral-300"
                     >
                       Website
                     </label>
@@ -323,14 +323,14 @@ export default function ContactPage() {
                       type="url"
                       placeholder="https://"
                       disabled={status === "loading"}
-                      className="mt-4 w-full border-b border-white/15 bg-transparent pb-4 text-base text-white outline-none transition-colors placeholder:text-white/20 focus:border-[#C9A45C] disabled:cursor-not-allowed disabled:opacity-50"
+                      className="mt-4 w-full border-b border-white/15 bg-transparent pb-4 text-base text-white outline-none transition-colors placeholder:text-neutral-500 focus:border-[#C9A45C] disabled:cursor-not-allowed disabled:opacity-50"
                     />
                   </div>
                 </div>
 
                 {/* Services */}
                 <div>
-                  <p className="text-xs uppercase tracking-[0.22em] text-white/45">
+                  <p className="text-xs uppercase tracking-[0.22em] text-neutral-300">
                     What do you need? *
                   </p>
 
@@ -348,7 +348,7 @@ export default function ContactPage() {
                           className={`border px-4 py-3 text-xs uppercase tracking-[0.16em] transition-all duration-300 disabled:cursor-not-allowed disabled:opacity-50 ${
                             active
                               ? "border-[#C9A45C] bg-[#C9A45C] text-black"
-                              : "border-white/15 text-white/50 hover:border-[#C9A45C] hover:text-[#C9A45C]"
+                              : "border-white/20 text-neutral-300 hover:border-[#C9A45C] hover:text-[#C9A45C]"
                           }`}
                         >
                           {type}
@@ -362,7 +362,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     htmlFor="budget"
-                    className="text-xs uppercase tracking-[0.22em] text-white/45"
+                    className="text-xs uppercase tracking-[0.22em] text-neutral-300"
                   >
                     Estimated Budget *
                   </label>
@@ -380,11 +380,11 @@ export default function ContactPage() {
                       placeholder="Enter your estimated budget"
                       disabled={status === "loading"}
                       onChange={() => setStatus("idle")}
-                      className="w-full border-b border-white/15 bg-transparent pb-4 pl-6 text-base text-white outline-none transition-colors placeholder:text-white/20 focus:border-[#C9A45C] disabled:cursor-not-allowed disabled:opacity-50"
+                      className="w-full border-b border-white/15 bg-transparent pb-4 pl-6 text-base text-white outline-none transition-colors placeholder:text-neutral-500 focus:border-[#C9A45C] disabled:cursor-not-allowed disabled:opacity-50"
                     />
                   </div>
 
-                  <p className="mt-3 text-xs leading-5 text-white/25">
+                  <p className="mt-3 text-xs leading-5 text-neutral-400">
                     Enter the budget that feels right for your project.
                   </p>
                 </div>
@@ -393,7 +393,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     htmlFor="timeline"
-                    className="text-xs uppercase tracking-[0.22em] text-white/45"
+                    className="text-xs uppercase tracking-[0.22em] text-neutral-300"
                   >
                     Timeline
                   </label>
@@ -404,7 +404,7 @@ export default function ContactPage() {
                     type="text"
                     placeholder="When would you like to launch?"
                     disabled={status === "loading"}
-                    className="mt-4 w-full border-b border-white/15 bg-transparent pb-4 text-base text-white outline-none transition-colors placeholder:text-white/20 focus:border-[#C9A45C] disabled:cursor-not-allowed disabled:opacity-50"
+                    className="mt-4 w-full border-b border-white/15 bg-transparent pb-4 text-base text-white outline-none transition-colors placeholder:text-neutral-500 focus:border-[#C9A45C] disabled:cursor-not-allowed disabled:opacity-50"
                   />
                 </div>
 
@@ -412,7 +412,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     htmlFor="message"
-                    className="text-xs uppercase tracking-[0.22em] text-white/45"
+                    className="text-xs uppercase tracking-[0.22em] text-neutral-300"
                   >
                     Tell us about the project *
                   </label>
@@ -424,7 +424,7 @@ export default function ContactPage() {
                     placeholder="What are you building? What needs to change? What would success look like?"
                     disabled={status === "loading"}
                     onChange={() => setStatus("idle")}
-                    className="mt-4 w-full resize-none border border-white/15 bg-transparent p-5 text-base leading-7 text-white outline-none transition-colors placeholder:text-white/20 focus:border-[#C9A45C] disabled:cursor-not-allowed disabled:opacity-50"
+                    className="mt-4 w-full resize-none border border-white/15 bg-transparent p-5 text-base leading-7 text-white outline-none transition-colors placeholder:text-neutral-500 focus:border-[#C9A45C] disabled:cursor-not-allowed disabled:opacity-50"
                   />
                 </div>
 
@@ -466,7 +466,7 @@ export default function ContactPage() {
                     </span>
                   </button>
 
-                  <p className="mt-4 text-xs leading-6 text-white/25">
+                  <p className="mt-4 text-xs leading-6 text-neutral-400">
                     Fields marked with * are required.
                   </p>
                 </div>
@@ -492,7 +492,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <p className="max-w-2xl text-base leading-8 text-white/50 sm:text-lg">
+                <p className="max-w-2xl text-base leading-8 text-neutral-300 sm:text-lg">
                   We take on a limited number of projects at a time so each one
                   gets the strategic attention, creative direction and execution
                   it deserves.
@@ -501,7 +501,7 @@ export default function ContactPage() {
                 <div className="mt-8 flex items-center gap-3">
                   <span className="h-2 w-2 rounded-full bg-[#C9A45C]" />
 
-                  <p className="text-xs uppercase tracking-[0.22em] text-white/40">
+                  <p className="text-xs uppercase tracking-[0.22em] text-neutral-300">
                     Currently accepting selected projects
                   </p>
                 </div>
@@ -537,7 +537,7 @@ export default function ContactPage() {
           <Reveal delay={0.16}>
             <a
               href="mailto:hello@kadievmedia.com"
-              className="mt-9 inline-block text-base text-white/55 underline decoration-white/15 underline-offset-8 transition-colors hover:text-[#C9A45C] sm:text-lg"
+              className="mt-9 inline-block text-base text-neutral-300 underline decoration-white/15 underline-offset-8 transition-colors hover:text-[#C9A45C] sm:text-lg"
             >
               hello@kadievmedia.com
             </a>

@@ -109,7 +109,7 @@ export default function NordHausCaseStudyPage() {
                   materiality and modern restraint.
                 </p>
 
-                <p className="max-w-lg text-sm leading-7 text-white/45 lg:justify-self-end">
+                <p className="max-w-lg text-sm leading-7 text-neutral-300 lg:justify-self-end">
                   Strategy, visual identity and digital direction created to
                   translate architectural precision into a premium brand
                   experience.
@@ -136,7 +136,7 @@ export default function NordHausCaseStudyPage() {
                       key={label}
                       className="grid grid-cols-[0.75fr_1.25fr] gap-6 py-5"
                     >
-                      <p className="text-xs uppercase tracking-[0.2em] text-white/30">
+                      <p className="text-xs uppercase tracking-[0.2em] text-neutral-400">
                         {label}
                       </p>
 
@@ -158,13 +158,13 @@ export default function NordHausCaseStudyPage() {
                 </p>
 
                 <div className="mt-12 grid gap-8 border-t border-white/10 pt-8 sm:grid-cols-2">
-                  <p className="text-base leading-8 text-white/45">
+                  <p className="text-base leading-8 text-neutral-300">
                     The identity needed to feel contemporary and premium while
                     remaining quiet enough to let the architecture speak for
                     itself.
                   </p>
 
-                  <p className="text-base leading-8 text-white/45">
+                  <p className="text-base leading-8 text-neutral-300">
                     Our direction combines structural typography, precise grids,
                     material-led imagery and generous negative space into one
                     cohesive system.
@@ -190,12 +190,12 @@ export default function NordHausCaseStudyPage() {
               <div>
                 <h2 className="max-w-4xl font-serif text-4xl leading-[1.08] tracking-[-0.035em] sm:text-5xl lg:text-7xl">
                   Communicate precision
-                  <span className="block text-white/30">
+                  <span className="block text-[#C9A45C]">
                     without becoming cold.
                   </span>
                 </h2>
 
-                <p className="mt-10 max-w-2xl text-base leading-8 text-white/50 sm:text-lg">
+                <p className="mt-10 max-w-2xl text-base leading-8 text-neutral-300 sm:text-lg">
                   Architectural brands often lean heavily toward rigid,
                   technical presentation. NordHaus needed structure and clarity
                   while still communicating warmth, lifestyle and human
@@ -232,7 +232,7 @@ export default function NordHausCaseStudyPage() {
                   02 / Strategy
                 </p>
 
-                <p className="mt-6 max-w-sm text-sm leading-7 text-white/35">
+                <p className="mt-6 max-w-sm text-sm leading-7 text-neutral-400">
                   Translating architectural thinking into a complete brand
                   system.
                 </p>
@@ -250,7 +250,7 @@ export default function NordHausCaseStudyPage() {
               </Reveal>
 
               <Reveal delay={0.14}>
-                <p className="mt-10 max-w-3xl text-base leading-8 text-white/50 sm:text-lg">
+                <p className="mt-10 max-w-3xl text-base leading-8 text-neutral-300 sm:text-lg">
                   The strategic direction centers on architectural discipline:
                   every element serves a function, every composition has
                   hierarchy, and every visual decision supports the work rather
@@ -270,7 +270,7 @@ export default function NordHausCaseStudyPage() {
                         {principle.title}
                       </h3>
 
-                      <p className="mt-5 text-sm leading-7 text-white/40">
+                      <p className="mt-5 text-sm leading-7 text-neutral-300">
                         {principle.text}
                       </p>
                     </article>
@@ -295,12 +295,12 @@ export default function NordHausCaseStudyPage() {
             <div className="mt-10 grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
               <h2 className="font-serif text-5xl leading-[0.98] tracking-[-0.04em] sm:text-6xl lg:text-8xl">
                 Designed with
-                <span className="block text-white/30">
+                <span className="block text-[#C9A45C]">
                   architectural discipline.
                 </span>
               </h2>
 
-              <p className="max-w-xl text-base leading-8 text-white/45">
+              <p className="max-w-xl text-base leading-8 text-neutral-300">
                 Neutral materials, disciplined typography and modular layouts
                 form the identity. Warm metallic accents introduce refinement
                 without compromising the clarity of the system.
@@ -317,7 +317,7 @@ export default function NordHausCaseStudyPage() {
 
                 <div className="mt-24">
                   <p className="font-serif text-5xl text-white">Aa</p>
-                  <p className="mt-4 text-sm text-white/35">
+                  <p className="mt-4 text-sm text-neutral-400">
                     Structural typography
                   </p>
                 </div>
@@ -369,13 +369,13 @@ export default function NordHausCaseStudyPage() {
 
                 <h2 className="mt-8 max-w-3xl font-serif text-4xl leading-[1.08] tracking-[-0.035em] sm:text-5xl lg:text-7xl">
                   Architecture first.
-                  <span className="block text-white/30">
+                  <span className="block text-[#C9A45C]">
                     Interface second.
                   </span>
                 </h2>
               </div>
 
-              <p className="max-w-xl text-base leading-8 text-white/45 lg:justify-self-end">
+              <p className="max-w-xl text-base leading-8 text-neutral-300 lg:justify-self-end">
                 The digital experience is designed like a gallery. Large
                 project imagery, precise typography and restrained navigation
                 create a quiet environment where the architecture remains
@@ -410,7 +410,7 @@ export default function NordHausCaseStudyPage() {
                   05 / Content System
                 </p>
 
-                <p className="mt-6 max-w-sm text-sm leading-7 text-white/35">
+                <p className="mt-6 max-w-sm text-sm leading-7 text-neutral-400">
                   A flexible visual system built to present architecture across
                   digital and editorial formats.
                 </p>
@@ -424,7 +424,7 @@ export default function NordHausCaseStudyPage() {
                   <span className="block text-[#C9A45C]">Many spaces.</span>
                 </h2>
 
-                <p className="mt-10 max-w-3xl text-base leading-8 text-white/50 sm:text-lg">
+                <p className="mt-10 max-w-3xl text-base leading-8 text-neutral-300 sm:text-lg">
                   NordHaus is designed to scale across project presentations,
                   architectural photography, editorial stories and digital
                   campaigns while maintaining a consistent visual rhythm.
@@ -434,7 +434,7 @@ export default function NordHausCaseStudyPage() {
                   {services.map((service) => (
                     <span
                       key={service}
-                      className="border border-white/15 px-4 py-3 text-xs uppercase tracking-[0.16em] text-white/45"
+                      className="border border-white/15 px-4 py-3 text-xs uppercase tracking-[0.16em] text-neutral-300"
                     >
                       {service}
                     </span>
@@ -470,7 +470,7 @@ export default function NordHausCaseStudyPage() {
           <Reveal delay={0.08}>
             <h2 className="mt-8 max-w-5xl font-serif text-5xl leading-[1.02] tracking-[-0.04em] sm:text-6xl lg:text-8xl">
               A brand designed
-              <span className="block text-white/30">like architecture.</span>
+              <span className="block text-[#C9A45C]">like architecture.</span>
             </h2>
           </Reveal>
 
@@ -478,21 +478,21 @@ export default function NordHausCaseStudyPage() {
             <div className="mt-16 grid gap-10 border-t border-white/10 pt-10 md:grid-cols-3">
               <div>
                 <p className="font-serif text-4xl text-[#C9A45C]">01</p>
-                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-white/40">
+                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-neutral-300">
                   Clear Positioning
                 </p>
               </div>
 
               <div>
                 <p className="font-serif text-4xl text-[#C9A45C]">02</p>
-                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-white/40">
+                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-neutral-300">
                   Modular Identity
                 </p>
               </div>
 
               <div>
                 <p className="font-serif text-4xl text-[#C9A45C]">03</p>
-                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-white/40">
+                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-neutral-300">
                   Editorial Digital System
                 </p>
               </div>

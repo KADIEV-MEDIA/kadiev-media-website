@@ -108,7 +108,7 @@ export default function FitLabCaseStudyPage() {
                   training, performance data and a bold digital experience.
                 </p>
 
-                <p className="max-w-lg text-sm leading-7 text-white/45 lg:justify-self-end">
+                <p className="max-w-lg text-sm leading-7 text-neutral-300 lg:justify-self-end">
                   Strategy, identity and product direction designed to turn
                   fitness data into meaningful progress.
                 </p>
@@ -134,7 +134,7 @@ export default function FitLabCaseStudyPage() {
                       key={label}
                       className="grid grid-cols-[0.75fr_1.25fr] gap-6 py-5"
                     >
-                      <p className="text-xs uppercase tracking-[0.2em] text-white/30">
+                      <p className="text-xs uppercase tracking-[0.2em] text-neutral-400">
                         {label}
                       </p>
 
@@ -156,13 +156,13 @@ export default function FitLabCaseStudyPage() {
                 </p>
 
                 <div className="mt-12 grid gap-8 border-t border-white/10 pt-8 sm:grid-cols-2">
-                  <p className="text-base leading-8 text-white/45">
+                  <p className="text-base leading-8 text-neutral-300">
                     The challenge was to make a data-heavy fitness platform feel
                     motivating rather than technical, while still communicating
                     intelligence, credibility and performance.
                   </p>
 
-                  <p className="text-base leading-8 text-white/45">
+                  <p className="text-base leading-8 text-neutral-300">
                     Our direction combines bold contrast, performance-focused
                     typography, AI-driven product thinking and a digital system
                     designed around clear action.
@@ -188,12 +188,12 @@ export default function FitLabCaseStudyPage() {
               <div>
                 <h2 className="max-w-4xl font-serif text-4xl leading-[1.08] tracking-[-0.035em] sm:text-5xl lg:text-7xl">
                   Make intelligence
-                  <span className="block text-white/30">
+                  <span className="block text-[#C9A45C]">
                     feel motivating.
                   </span>
                 </h2>
 
-                <p className="mt-10 max-w-2xl text-base leading-8 text-white/50 sm:text-lg">
+                <p className="mt-10 max-w-2xl text-base leading-8 text-neutral-300 sm:text-lg">
                   Fitness technology often becomes overloaded with charts,
                   metrics and features. FitLab needed to remain powerful without
                   overwhelming the user.
@@ -229,7 +229,7 @@ export default function FitLabCaseStudyPage() {
                   02 / Strategy
                 </p>
 
-                <p className="mt-6 max-w-sm text-sm leading-7 text-white/35">
+                <p className="mt-6 max-w-sm text-sm leading-7 text-neutral-400">
                   Designing a performance system where every data point has a
                   clear purpose.
                 </p>
@@ -247,7 +247,7 @@ export default function FitLabCaseStudyPage() {
               </Reveal>
 
               <Reveal delay={0.14}>
-                <p className="mt-10 max-w-3xl text-base leading-8 text-white/50 sm:text-lg">
+                <p className="mt-10 max-w-3xl text-base leading-8 text-neutral-300 sm:text-lg">
                   FitLab is built around one core idea: intelligence only matters
                   when it helps the user act. The experience prioritizes useful
                   recommendations, meaningful feedback and visible progress over
@@ -267,7 +267,7 @@ export default function FitLabCaseStudyPage() {
                         {principle.title}
                       </h3>
 
-                      <p className="mt-5 text-sm leading-7 text-white/40">
+                      <p className="mt-5 text-sm leading-7 text-neutral-300">
                         {principle.text}
                       </p>
                     </article>
@@ -292,12 +292,12 @@ export default function FitLabCaseStudyPage() {
             <div className="mt-10 grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
               <h2 className="font-serif text-5xl leading-[0.98] tracking-[-0.04em] sm:text-6xl lg:text-8xl">
                 Built for
-                <span className="block text-white/30">
+                <span className="block text-[#C9A45C]">
                   forward momentum.
                 </span>
               </h2>
 
-              <p className="max-w-xl text-base leading-8 text-white/45">
+              <p className="max-w-xl text-base leading-8 text-neutral-300">
                 Charcoal, black and electric performance accents create the
                 foundation. Strong typography and data-led interface patterns
                 give the brand a modern athletic identity.
@@ -314,7 +314,7 @@ export default function FitLabCaseStudyPage() {
 
                 <div className="mt-24">
                   <p className="font-serif text-5xl text-[#C9A45C]">FL</p>
-                  <p className="mt-4 text-sm text-white/35">
+                  <p className="mt-4 text-sm text-neutral-400">
                     Focused identity
                   </p>
                 </div>
@@ -323,13 +323,13 @@ export default function FitLabCaseStudyPage() {
 
             <Reveal delay={0.08}>
               <div className="min-h-[280px] bg-[#171717] p-8 text-white sm:p-10">
-                <p className="text-xs uppercase tracking-[0.24em] text-white/35">
+                <p className="text-xs uppercase tracking-[0.24em] text-neutral-400">
                   Interface
                 </p>
 
                 <div className="mt-24">
                   <p className="font-serif text-5xl">FitLab</p>
-                  <p className="mt-4 text-sm text-white/40">
+                  <p className="mt-4 text-sm text-neutral-300">
                     Intelligent performance
                   </p>
                 </div>
@@ -366,13 +366,13 @@ export default function FitLabCaseStudyPage() {
 
                 <h2 className="mt-8 max-w-3xl font-serif text-4xl leading-[1.08] tracking-[-0.035em] sm:text-5xl lg:text-7xl">
                   Data that
-                  <span className="block text-white/30">
+                  <span className="block text-[#C9A45C]">
                     drives action.
                   </span>
                 </h2>
               </div>
 
-              <p className="max-w-xl text-base leading-8 text-white/45 lg:justify-self-end">
+              <p className="max-w-xl text-base leading-8 text-neutral-300 lg:justify-self-end">
                 The product experience translates workouts, recovery,
                 performance trends and AI recommendations into a simple,
                 actionable interface.
@@ -406,7 +406,7 @@ export default function FitLabCaseStudyPage() {
                   05 / AI Performance System
                 </p>
 
-                <p className="mt-6 max-w-sm text-sm leading-7 text-white/35">
+                <p className="mt-6 max-w-sm text-sm leading-7 text-neutral-400">
                   A scalable intelligent system designed around training,
                   recovery and continuous progress.
                 </p>
@@ -422,7 +422,7 @@ export default function FitLabCaseStudyPage() {
                   </span>
                 </h2>
 
-                <p className="mt-10 max-w-3xl text-base leading-8 text-white/50 sm:text-lg">
+                <p className="mt-10 max-w-3xl text-base leading-8 text-neutral-300 sm:text-lg">
                   FitLab&apos;s intelligent layer learns from user performance,
                   recovery and consistency to shape personalized training
                   recommendations and adaptive fitness experiences.
@@ -432,7 +432,7 @@ export default function FitLabCaseStudyPage() {
                   {services.map((service) => (
                     <span
                       key={service}
-                      className="border border-white/15 px-4 py-3 text-xs uppercase tracking-[0.16em] text-white/45"
+                      className="border border-white/15 px-4 py-3 text-xs uppercase tracking-[0.16em] text-neutral-300"
                     >
                       {service}
                     </span>
@@ -468,7 +468,7 @@ export default function FitLabCaseStudyPage() {
           <Reveal delay={0.08}>
             <h2 className="mt-8 max-w-5xl font-serif text-5xl leading-[1.02] tracking-[-0.04em] sm:text-6xl lg:text-8xl">
               Intelligence turned
-              <span className="block text-white/30">into momentum.</span>
+              <span className="block text-[#C9A45C]">into momentum.</span>
             </h2>
           </Reveal>
 
@@ -476,21 +476,21 @@ export default function FitLabCaseStudyPage() {
             <div className="mt-16 grid gap-10 border-t border-white/10 pt-10 md:grid-cols-3">
               <div>
                 <p className="font-serif text-4xl text-[#C9A45C]">01</p>
-                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-white/40">
+                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-neutral-300">
                   Clear Positioning
                 </p>
               </div>
 
               <div>
                 <p className="font-serif text-4xl text-[#C9A45C]">02</p>
-                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-white/40">
+                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-neutral-300">
                   Intelligent Product System
                 </p>
               </div>
 
               <div>
                 <p className="font-serif text-4xl text-[#C9A45C]">03</p>
-                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-white/40">
+                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-neutral-300">
                   Scalable Performance Experience
                 </p>
               </div>

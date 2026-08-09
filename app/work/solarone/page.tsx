@@ -108,7 +108,7 @@ export default function SolarOneCaseStudyPage() {
                   technology feel intelligent, desirable and built for scale.
                 </p>
 
-                <p className="max-w-lg text-sm leading-7 text-white/45 lg:justify-self-end">
+                <p className="max-w-lg text-sm leading-7 text-neutral-300 lg:justify-self-end">
                   Strategy, identity and digital direction connecting renewable
                   infrastructure with a premium technology experience.
                 </p>
@@ -134,7 +134,7 @@ export default function SolarOneCaseStudyPage() {
                       key={label}
                       className="grid grid-cols-[0.75fr_1.25fr] gap-6 py-5"
                     >
-                      <p className="text-xs uppercase tracking-[0.2em] text-white/30">
+                      <p className="text-xs uppercase tracking-[0.2em] text-neutral-400">
                         {label}
                       </p>
 
@@ -156,12 +156,12 @@ export default function SolarOneCaseStudyPage() {
                 </p>
 
                 <div className="mt-12 grid gap-8 border-t border-white/10 pt-8 sm:grid-cols-2">
-                  <p className="text-base leading-8 text-white/45">
+                  <p className="text-base leading-8 text-neutral-300">
                     SolarOne needed to communicate advanced energy technology
                     without becoming cold, industrial or overly technical.
                   </p>
 
-                  <p className="text-base leading-8 text-white/45">
+                  <p className="text-base leading-8 text-neutral-300">
                     The direction combines architecture, natural light, precise
                     data and a refined identity to position renewable energy as
                     a premium modern infrastructure system.
@@ -187,12 +187,12 @@ export default function SolarOneCaseStudyPage() {
               <div>
                 <h2 className="max-w-4xl font-serif text-4xl leading-[1.08] tracking-[-0.035em] sm:text-5xl lg:text-7xl">
                   Make sustainability
-                  <span className="block text-white/30">
+                  <span className="block text-[#C9A45C]">
                     feel aspirational.
                   </span>
                 </h2>
 
-                <p className="mt-10 max-w-2xl text-base leading-8 text-white/50 sm:text-lg">
+                <p className="mt-10 max-w-2xl text-base leading-8 text-neutral-300 sm:text-lg">
                   Renewable energy brands often rely on predictable green
                   imagery and technical messaging. SolarOne needed a more
                   sophisticated visual language capable of speaking to both
@@ -229,7 +229,7 @@ export default function SolarOneCaseStudyPage() {
                   02 / Strategy
                 </p>
 
-                <p className="mt-6 max-w-sm text-sm leading-7 text-white/35">
+                <p className="mt-6 max-w-sm text-sm leading-7 text-neutral-400">
                   Positioning clean energy as intelligent infrastructure for a
                   more independent future.
                 </p>
@@ -247,7 +247,7 @@ export default function SolarOneCaseStudyPage() {
               </Reveal>
 
               <Reveal delay={0.14}>
-                <p className="mt-10 max-w-3xl text-base leading-8 text-white/50 sm:text-lg">
+                <p className="mt-10 max-w-3xl text-base leading-8 text-neutral-300 sm:text-lg">
                   SolarOne transforms energy generation from an invisible
                   utility into a clear digital experience. The system helps
                   people understand production, consumption and environmental
@@ -267,7 +267,7 @@ export default function SolarOneCaseStudyPage() {
                         {principle.title}
                       </h3>
 
-                      <p className="mt-5 text-sm leading-7 text-white/40">
+                      <p className="mt-5 text-sm leading-7 text-neutral-300">
                         {principle.text}
                       </p>
                     </article>
@@ -292,12 +292,12 @@ export default function SolarOneCaseStudyPage() {
             <div className="mt-10 grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
               <h2 className="font-serif text-5xl leading-[0.98] tracking-[-0.04em] sm:text-6xl lg:text-8xl">
                 Designed around
-                <span className="block text-white/30">
+                <span className="block text-[#C9A45C]">
                   light and progress.
                 </span>
               </h2>
 
-              <p className="max-w-xl text-base leading-8 text-white/45">
+              <p className="max-w-xl text-base leading-8 text-neutral-300">
                 Deep charcoal provides a premium technological foundation,
                 while solar gold, warm daylight and clean architectural imagery
                 bring energy and optimism into the system.
@@ -314,7 +314,7 @@ export default function SolarOneCaseStudyPage() {
 
                 <div className="mt-24">
                   <p className="font-serif text-5xl text-[#C9A45C]">SO</p>
-                  <p className="mt-4 text-sm text-white/35">
+                  <p className="mt-4 text-sm text-neutral-400">
                     Intelligent energy
                   </p>
                 </div>
@@ -323,13 +323,13 @@ export default function SolarOneCaseStudyPage() {
 
             <Reveal delay={0.08}>
               <div className="min-h-[280px] bg-[#1A1A18] p-8 text-white sm:p-10">
-                <p className="text-xs uppercase tracking-[0.24em] text-white/35">
+                <p className="text-xs uppercase tracking-[0.24em] text-neutral-400">
                   Infrastructure
                 </p>
 
                 <div className="mt-24">
                   <p className="font-serif text-5xl">SolarOne</p>
-                  <p className="mt-4 text-sm text-white/40">
+                  <p className="mt-4 text-sm text-neutral-300">
                     Clean precision
                   </p>
                 </div>
@@ -366,13 +366,13 @@ export default function SolarOneCaseStudyPage() {
 
                 <h2 className="mt-8 max-w-3xl font-serif text-4xl leading-[1.08] tracking-[-0.035em] sm:text-5xl lg:text-7xl">
                   Your energy.
-                  <span className="block text-white/30">
+                  <span className="block text-[#C9A45C]">
                     Clearly understood.
                   </span>
                 </h2>
               </div>
 
-              <p className="max-w-xl text-base leading-8 text-white/45 lg:justify-self-end">
+              <p className="max-w-xl text-base leading-8 text-neutral-300 lg:justify-self-end">
                 The digital experience turns live solar production, storage and
                 consumption into a calm interface built around clarity,
                 confidence and control.
@@ -404,7 +404,7 @@ export default function SolarOneCaseStudyPage() {
                   05 / Energy System
                 </p>
 
-                <p className="mt-6 max-w-sm text-sm leading-7 text-white/35">
+                <p className="mt-6 max-w-sm text-sm leading-7 text-neutral-400">
                   A connected ecosystem designed around generation, storage,
                   intelligence and energy independence.
                 </p>
@@ -420,7 +420,7 @@ export default function SolarOneCaseStudyPage() {
                   </span>
                 </h2>
 
-                <p className="mt-10 max-w-3xl text-base leading-8 text-white/50 sm:text-lg">
+                <p className="mt-10 max-w-3xl text-base leading-8 text-neutral-300 sm:text-lg">
                   The SolarOne ecosystem connects generation, battery storage
                   and consumption data into one intelligent system designed to
                   make clean energy easier to understand and manage.
@@ -430,7 +430,7 @@ export default function SolarOneCaseStudyPage() {
                   {services.map((service) => (
                     <span
                       key={service}
-                      className="border border-white/15 px-4 py-3 text-xs uppercase tracking-[0.16em] text-white/45"
+                      className="border border-white/15 px-4 py-3 text-xs uppercase tracking-[0.16em] text-neutral-300"
                     >
                       {service}
                     </span>
@@ -466,7 +466,7 @@ export default function SolarOneCaseStudyPage() {
           <Reveal delay={0.08}>
             <h2 className="mt-8 max-w-5xl font-serif text-5xl leading-[1.02] tracking-[-0.04em] sm:text-6xl lg:text-8xl">
               Clean energy transformed
-              <span className="block text-white/30">
+              <span className="block text-[#C9A45C]">
                 into a premium experience.
               </span>
             </h2>
@@ -476,21 +476,21 @@ export default function SolarOneCaseStudyPage() {
             <div className="mt-16 grid gap-10 border-t border-white/10 pt-10 md:grid-cols-3">
               <div>
                 <p className="font-serif text-4xl text-[#C9A45C]">01</p>
-                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-white/40">
+                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-neutral-300">
                   Future-Focused Positioning
                 </p>
               </div>
 
               <div>
                 <p className="font-serif text-4xl text-[#C9A45C]">02</p>
-                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-white/40">
+                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-neutral-300">
                   Clear Energy Experience
                 </p>
               </div>
 
               <div>
                 <p className="font-serif text-4xl text-[#C9A45C]">03</p>
-                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-white/40">
+                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-neutral-300">
                   Scalable Digital System
                 </p>
               </div>

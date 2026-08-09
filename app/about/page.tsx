@@ -114,13 +114,13 @@ export default function AboutPage() {
 
             <Reveal delay={0.16}>
               <div className="mt-10 grid gap-8 border-t border-white/10 pt-8 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
-                <p className="max-w-2xl text-base leading-8 text-white/60 sm:text-lg">
+                <p className="max-w-2xl text-base leading-8 text-neutral-300 sm:text-lg">
                   Kadiev Media is an AI-first creative studio combining strategy,
                   design, technology and intelligent production into one
                   connected system.
                 </p>
 
-                <p className="max-w-xl text-sm leading-7 text-white/40 sm:text-base lg:justify-self-end">
+                <p className="max-w-xl text-sm leading-7 text-neutral-400 sm:text-base lg:justify-self-end">
                   We help ambitious brands become clearer, more distinctive and
                   better equipped for the digital world ahead.
                 </p>
@@ -146,19 +146,19 @@ export default function AboutPage() {
               <div>
                 <h2 className="max-w-4xl font-serif text-4xl leading-tight tracking-[-0.03em] sm:text-5xl lg:text-6xl">
                   Built for brands that
-                  <span className="block text-white/35">
+                  <span className="block text-[#C9A45C]">
                     refuse to blend in.
                   </span>
                 </h2>
 
                 <div className="mt-10 grid gap-8 md:grid-cols-2">
-                  <p className="text-base leading-8 text-white/55">
+                  <p className="text-base leading-8 text-neutral-300">
                     Kadiev Media brings strategic thinking, premium design,
                     modern development and AI-powered creative production under
                     one direction.
                   </p>
 
-                  <p className="text-base leading-8 text-white/45">
+                  <p className="text-base leading-8 text-neutral-300">
                     Instead of fragmented execution, we build cohesive systems
                     where identity, website, content and technology support the
                     same positioning and long-term vision.
@@ -247,7 +247,7 @@ export default function AboutPage() {
 
                 <h2 className="mt-8 max-w-3xl font-serif text-4xl leading-tight tracking-[-0.03em] sm:text-5xl lg:text-6xl">
                   Technology should
-                  <span className="block text-white/35">
+                  <span className="block text-[#C9A45C]">
                     amplify good thinking.
                   </span>
                 </h2>
@@ -301,7 +301,7 @@ export default function AboutPage() {
                     {principle.title}
                   </h3>
 
-                  <p className="mt-5 max-w-md text-sm leading-7 text-white/45 transition-colors duration-500 group-hover:text-white/65 sm:text-base">
+                  <p className="mt-5 max-w-md text-sm leading-7 text-neutral-300 transition-colors duration-500 group-hover:text-white sm:text-base">
                     {principle.description}
                   </p>
                 </article>
@@ -321,7 +321,7 @@ export default function AboutPage() {
 
             <h2 className="mt-6 max-w-4xl font-serif text-4xl leading-tight tracking-[-0.03em] sm:text-5xl lg:text-6xl">
               A different way
-              <span className="block text-white/35">
+              <span className="block text-[#C9A45C]">
                 to build creative work.
               </span>
             </h2>
@@ -339,7 +339,7 @@ export default function AboutPage() {
                 >
                   <p
                     className={`text-xs uppercase tracking-[0.28em] ${
-                      index === 0 ? "text-white/35" : "text-[#C9A45C]"
+                      index === 0 ? "text-neutral-400" : "text-[#C9A45C]"
                     }`}
                   >
                     {column.label}
@@ -349,7 +349,7 @@ export default function AboutPage() {
                     {column.items.map((item) => (
                       <div
                         key={item}
-                        className="border-t border-white/10 py-5 text-sm leading-7 text-white/55 sm:text-base"
+                        className="border-t border-white/10 py-5 text-sm leading-7 text-neutral-300 sm:text-base"
                       >
                         {item}
                       </div>
@@ -383,7 +383,7 @@ export default function AboutPage() {
                 </span>
               </h2>
 
-              <p className="mx-auto mt-8 max-w-2xl text-base leading-8 text-white/50 sm:text-lg">
+              <p className="mx-auto mt-8 max-w-2xl text-base leading-8 text-neutral-300 sm:text-lg">
                 The goal is not simply to make something look better. It is to
                 create brands and digital systems capable of staying relevant,
                 adapting and growing.

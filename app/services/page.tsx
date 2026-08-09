@@ -197,7 +197,7 @@ export default function ServicesPage() {
               <div>
                 <h2 className="max-w-3xl font-serif text-4xl leading-tight tracking-[-0.03em] sm:text-5xl lg:text-6xl">
                   One studio.
-                  <span className="block text-white/35">
+                  <span className="block text-[#C9A45C]">
                     Multiple disciplines.
                   </span>
                 </h2>
@@ -222,7 +222,7 @@ export default function ServicesPage() {
                       {service.title}
                     </h3>
 
-                    <p className="mt-6 max-w-sm text-sm leading-7 text-white/50 transition-colors duration-500 group-hover:text-white/70 sm:text-base">
+                    <p className="mt-6 max-w-sm text-sm leading-7 text-neutral-300 transition-colors duration-500 group-hover:text-white sm:text-base">
                       {service.description}
                     </p>
                   </div>
@@ -248,9 +248,9 @@ export default function ServicesPage() {
                 How We Do
               </p>
 
-              <h2 className="max-w-4xl font-serif text-4xl leading-tight tracking-[-0.03em] sm:text-5xl lg:text-6xl">
+              <h2 className="max-w-4xl font-serif text-4xl leading-tight tracking-[-0.03em] text-white sm:text-5xl lg:text-6xl">
                 A clear process.
-                <span className="block text-white/35">
+                <span className="block text-[#C9A45C]">
                   No unnecessary complexity.
                 </span>
               </h2>
@@ -268,13 +268,13 @@ export default function ServicesPage() {
                   </div>
 
                   <div>
-                    <h3 className="font-serif text-3xl tracking-[-0.02em] transition-transform duration-500 group-hover:translate-x-2 sm:text-4xl">
+                    <h3 className="font-serif text-3xl tracking-[-0.02em] text-white transition-[transform,color] duration-500 group-hover:translate-x-2 group-hover:text-[#C9A45C] sm:text-4xl">
                       {step.title}
                     </h3>
                   </div>
 
                   <div>
-                    <p className="max-w-xl text-sm leading-7 text-white/50 transition-colors duration-500 group-hover:text-white/70 sm:text-base">
+                    <p className="max-w-xl text-sm leading-7 text-neutral-300 transition-colors duration-500 group-hover:text-white sm:text-base">
                       {step.description}
                     </p>
                   </div>
@@ -303,12 +303,12 @@ export default function ServicesPage() {
               <div>
                 <h2 className="max-w-4xl font-serif text-4xl leading-tight tracking-[-0.03em] sm:text-5xl lg:text-6xl">
                   More than execution.
-                  <span className="block text-white/35">
+                  <span className="block text-[#C9A45C]">
                     A connected creative system.
                   </span>
                 </h2>
 
-                <p className="mt-8 max-w-2xl text-base leading-8 text-white/50 sm:text-lg">
+                <p className="mt-8 max-w-2xl text-base leading-8 text-neutral-300 sm:text-lg">
                   We combine strategy, design, technology and AI under one
                   direction so every part of the brand feels intentional,
                   consistent and built to work together.

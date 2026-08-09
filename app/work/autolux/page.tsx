@@ -9,10 +9,14 @@ export const metadata: Metadata = {
   description:
     "Explore AutoLux, a Kadiev Media luxury automotive case study combining brand strategy, visual identity, premium web design and performance-driven creative direction.",
 
+    alternates: {
+  canonical: "/work/autolux",
+},
   openGraph: {
     title: "AutoLux — Luxury Automotive | Kadiev Media",
     description:
       "A high-performance automotive identity and digital experience created around power, precision and uncompromising luxury.",
+      url: "/work/autolux",
   },
 
   twitter: {
@@ -103,7 +107,7 @@ export default function AutoLuxCaseStudyPage() {
                   around power, precision and uncompromising luxury.
                 </p>
 
-                <p className="max-w-lg text-sm leading-7 text-white/45 lg:justify-self-end">
+                <p className="max-w-lg text-sm leading-7 text-neutral-300 lg:justify-self-end">
                   Strategy, visual identity and digital direction designed to
                   turn automotive performance into a distinctive premium brand.
                 </p>
@@ -129,7 +133,7 @@ export default function AutoLuxCaseStudyPage() {
                       key={label}
                       className="grid grid-cols-[0.75fr_1.25fr] gap-6 py-5"
                     >
-                      <p className="text-xs uppercase tracking-[0.2em] text-white/30">
+                      <p className="text-xs uppercase tracking-[0.2em] text-neutral-400">
                         {label}
                       </p>
 
@@ -151,13 +155,13 @@ export default function AutoLuxCaseStudyPage() {
                 </p>
 
                 <div className="mt-12 grid gap-8 border-t border-white/10 pt-8 sm:grid-cols-2">
-                  <p className="text-base leading-8 text-white/45">
+                  <p className="text-base leading-8 text-neutral-300">
                     The concept required more than a dramatic automotive visual.
                     It needed a complete brand system capable of expressing
                     engineering quality, exclusivity and emotion.
                   </p>
 
-                  <p className="text-base leading-8 text-white/45">
+                  <p className="text-base leading-8 text-neutral-300">
                     Our direction combines cinematic imagery, precise
                     typography, dark metallic surfaces and restrained luxury
                     details into one cohesive experience.
@@ -183,10 +187,10 @@ export default function AutoLuxCaseStudyPage() {
               <div>
                 <h2 className="max-w-4xl font-serif text-4xl leading-[1.08] tracking-[-0.035em] sm:text-5xl lg:text-7xl">
                   Make performance feel
-                  <span className="block text-white/30">truly exclusive.</span>
+                  <span className="block text-[#C9A45C]">truly exclusive.</span>
                 </h2>
 
-                <p className="mt-10 max-w-2xl text-base leading-8 text-white/50 sm:text-lg">
+                <p className="mt-10 max-w-2xl text-base leading-8 text-neutral-300 sm:text-lg">
                   The luxury automotive category is filled with speed,
                   performance language and dramatic imagery. AutoLux needed to
                   use those codes without looking familiar or predictable.
@@ -222,7 +226,7 @@ export default function AutoLuxCaseStudyPage() {
                   02 / Strategy
                 </p>
 
-                <p className="mt-6 max-w-sm text-sm leading-7 text-white/35">
+                <p className="mt-6 max-w-sm text-sm leading-7 text-neutral-400">
                   Building a premium automotive identity around controlled
                   power rather than visual noise.
                 </p>
@@ -240,7 +244,7 @@ export default function AutoLuxCaseStudyPage() {
               </Reveal>
 
               <Reveal delay={0.14}>
-                <p className="mt-10 max-w-3xl text-base leading-8 text-white/50 sm:text-lg">
+                <p className="mt-10 max-w-3xl text-base leading-8 text-neutral-300 sm:text-lg">
                   The strategic direction balances aggression with restraint.
                   AutoLux feels fast and powerful, but never chaotic. Every
                   element is designed to reinforce control, confidence and
@@ -260,7 +264,7 @@ export default function AutoLuxCaseStudyPage() {
                         {principle.title}
                       </h3>
 
-                      <p className="mt-5 text-sm leading-7 text-white/40">
+                      <p className="mt-5 text-sm leading-7 text-neutral-300">
                         {principle.text}
                       </p>
                     </article>
@@ -285,10 +289,10 @@ export default function AutoLuxCaseStudyPage() {
             <div className="mt-10 grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
               <h2 className="font-serif text-5xl leading-[0.98] tracking-[-0.04em] sm:text-6xl lg:text-8xl">
                 Engineered for
-                <span className="block text-white/30">visual impact.</span>
+                <span className="block text-[#C9A45C]">visual impact.</span>
               </h2>
 
-              <p className="max-w-xl text-base leading-8 text-white/45">
+              <p className="max-w-xl text-base leading-8 text-neutral-300">
                 Deep black, graphite, polished metal and warm gold create the
                 visual foundation. Sharp typography and restrained composition
                 mirror the precision of performance engineering.
@@ -305,7 +309,7 @@ export default function AutoLuxCaseStudyPage() {
 
                 <div className="mt-24">
                   <p className="font-serif text-5xl text-[#C9A45C]">AL</p>
-                  <p className="mt-4 text-sm text-white/35">
+                  <p className="mt-4 text-sm text-neutral-400">
                     Precision identity
                   </p>
                 </div>
@@ -314,13 +318,13 @@ export default function AutoLuxCaseStudyPage() {
 
             <Reveal delay={0.08}>
               <div className="min-h-[280px] bg-[#222222] p-8 text-white sm:p-10">
-                <p className="text-xs uppercase tracking-[0.24em] text-white/35">
+                <p className="text-xs uppercase tracking-[0.24em] text-neutral-400">
                   Graphite
                 </p>
 
                 <div className="mt-24">
                   <p className="font-serif text-5xl">AutoLux</p>
-                  <p className="mt-4 text-sm text-white/40">
+                  <p className="mt-4 text-sm text-neutral-300">
                     Technical refinement
                   </p>
                 </div>
@@ -357,13 +361,13 @@ export default function AutoLuxCaseStudyPage() {
 
                 <h2 className="mt-8 max-w-3xl font-serif text-4xl leading-[1.08] tracking-[-0.035em] sm:text-5xl lg:text-7xl">
                   Built to move.
-                  <span className="block text-white/30">
+                  <span className="block text-[#C9A45C]">
                     Designed to perform.
                   </span>
                 </h2>
               </div>
 
-              <p className="max-w-xl text-base leading-8 text-white/45 lg:justify-self-end">
+              <p className="max-w-xl text-base leading-8 text-neutral-300 lg:justify-self-end">
                 The digital direction translates automotive performance into a
                 fast, immersive interface using cinematic imagery, controlled
                 motion and clear product storytelling.
@@ -397,7 +401,7 @@ export default function AutoLuxCaseStudyPage() {
                   05 / Creative System
                 </p>
 
-                <p className="mt-6 max-w-sm text-sm leading-7 text-white/35">
+                <p className="mt-6 max-w-sm text-sm leading-7 text-neutral-400">
                   A scalable visual system designed for launches, campaigns and
                   performance-driven automotive content.
                 </p>
@@ -413,7 +417,7 @@ export default function AutoLuxCaseStudyPage() {
                   </span>
                 </h2>
 
-                <p className="mt-10 max-w-3xl text-base leading-8 text-white/50 sm:text-lg">
+                <p className="mt-10 max-w-3xl text-base leading-8 text-neutral-300 sm:text-lg">
                   AutoLux is designed to scale across digital launches,
                   automotive campaigns, product storytelling and social content
                   while maintaining one unmistakable visual signature.
@@ -423,7 +427,7 @@ export default function AutoLuxCaseStudyPage() {
                   {services.map((service) => (
                     <span
                       key={service}
-                      className="border border-white/15 px-4 py-3 text-xs uppercase tracking-[0.16em] text-white/45"
+                      className="border border-white/15 px-4 py-3 text-xs uppercase tracking-[0.16em] text-neutral-300"
                     >
                       {service}
                     </span>
@@ -459,7 +463,7 @@ export default function AutoLuxCaseStudyPage() {
           <Reveal delay={0.08}>
             <h2 className="mt-8 max-w-5xl font-serif text-5xl leading-[1.02] tracking-[-0.04em] sm:text-6xl lg:text-8xl">
               Performance transformed
-              <span className="block text-white/30">into a brand.</span>
+              <span className="block text-[#C9A45C]">into a brand.</span>
             </h2>
           </Reveal>
 
@@ -467,21 +471,21 @@ export default function AutoLuxCaseStudyPage() {
             <div className="mt-16 grid gap-10 border-t border-white/10 pt-10 md:grid-cols-3">
               <div>
                 <p className="font-serif text-4xl text-[#C9A45C]">01</p>
-                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-white/40">
+                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-neutral-300">
                   Premium Positioning
                 </p>
               </div>
 
               <div>
                 <p className="font-serif text-4xl text-[#C9A45C]">02</p>
-                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-white/40">
+                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-neutral-300">
                   Performance Identity
                 </p>
               </div>
 
               <div>
                 <p className="font-serif text-4xl text-[#C9A45C]">03</p>
-                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-white/40">
+                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-neutral-300">
                   Scalable Digital System
                 </p>
               </div>

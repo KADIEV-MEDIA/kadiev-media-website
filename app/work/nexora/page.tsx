@@ -109,7 +109,7 @@ export default function NexoraCaseStudyPage() {
                   intelligence, connection and adaptive technology.
                 </p>
 
-                <p className="max-w-lg text-sm leading-7 text-white/45 lg:justify-self-end">
+                <p className="max-w-lg text-sm leading-7 text-neutral-300 lg:justify-self-end">
                   Strategy, identity and digital direction created to make
                   advanced AI systems feel clear, useful and built for scale.
                 </p>
@@ -135,7 +135,7 @@ export default function NexoraCaseStudyPage() {
                       key={label}
                       className="grid grid-cols-[0.75fr_1.25fr] gap-6 py-5"
                     >
-                      <p className="text-xs uppercase tracking-[0.2em] text-white/30">
+                      <p className="text-xs uppercase tracking-[0.2em] text-neutral-400">
                         {label}
                       </p>
 
@@ -157,13 +157,13 @@ export default function NexoraCaseStudyPage() {
                 </p>
 
                 <div className="mt-12 grid gap-8 border-t border-white/10 pt-8 sm:grid-cols-2">
-                  <p className="text-base leading-8 text-white/45">
+                  <p className="text-base leading-8 text-neutral-300">
                     The challenge was to communicate advanced technology without
                     falling into familiar futuristic clichés or overwhelming
                     users with unnecessary complexity.
                   </p>
 
-                  <p className="text-base leading-8 text-white/45">
+                  <p className="text-base leading-8 text-neutral-300">
                     Our direction combines intelligent interfaces, abstract
                     systems thinking, premium typography and restrained motion
                     into one coherent technology brand.
@@ -189,12 +189,12 @@ export default function NexoraCaseStudyPage() {
               <div>
                 <h2 className="max-w-4xl font-serif text-4xl leading-[1.08] tracking-[-0.035em] sm:text-5xl lg:text-7xl">
                   Make advanced AI
-                  <span className="block text-white/30">
+                  <span className="block text-[#C9A45C]">
                     feel understandable.
                   </span>
                 </h2>
 
-                <p className="mt-10 max-w-2xl text-base leading-8 text-white/50 sm:text-lg">
+                <p className="mt-10 max-w-2xl text-base leading-8 text-neutral-300 sm:text-lg">
                   Technology platforms often communicate complexity instead of
                   value. Nexora needed to feel sophisticated and future-facing
                   while remaining calm, clear and human-centered.
@@ -230,7 +230,7 @@ export default function NexoraCaseStudyPage() {
                   02 / Strategy
                 </p>
 
-                <p className="mt-6 max-w-sm text-sm leading-7 text-white/35">
+                <p className="mt-6 max-w-sm text-sm leading-7 text-neutral-400">
                   Positioning AI as a connected capability rather than a
                   collection of isolated features.
                 </p>
@@ -248,7 +248,7 @@ export default function NexoraCaseStudyPage() {
               </Reveal>
 
               <Reveal delay={0.14}>
-                <p className="mt-10 max-w-3xl text-base leading-8 text-white/50 sm:text-lg">
+                <p className="mt-10 max-w-3xl text-base leading-8 text-neutral-300 sm:text-lg">
                   Nexora is built around a connected-system philosophy. Data,
                   automation and human judgment work together so technology
                   becomes an invisible layer supporting better decisions and
@@ -268,7 +268,7 @@ export default function NexoraCaseStudyPage() {
                         {principle.title}
                       </h3>
 
-                      <p className="mt-5 text-sm leading-7 text-white/40">
+                      <p className="mt-5 text-sm leading-7 text-neutral-300">
                         {principle.text}
                       </p>
                     </article>
@@ -293,12 +293,12 @@ export default function NexoraCaseStudyPage() {
             <div className="mt-10 grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
               <h2 className="font-serif text-5xl leading-[0.98] tracking-[-0.04em] sm:text-6xl lg:text-8xl">
                 Designed for
-                <span className="block text-white/30">
+                <span className="block text-[#C9A45C]">
                   intelligent evolution.
                 </span>
               </h2>
 
-              <p className="max-w-xl text-base leading-8 text-white/45">
+              <p className="max-w-xl text-base leading-8 text-neutral-300">
                 Obsidian, graphite and luminous digital accents create a
                 premium technological foundation. Modular typography and system
                 graphics give Nexora a visual language capable of continuous
@@ -316,7 +316,7 @@ export default function NexoraCaseStudyPage() {
 
                 <div className="mt-24">
                   <p className="font-serif text-5xl text-[#C9A45C]">NX</p>
-                  <p className="mt-4 text-sm text-white/35">
+                  <p className="mt-4 text-sm text-neutral-400">
                     Connected identity
                   </p>
                 </div>
@@ -325,13 +325,13 @@ export default function NexoraCaseStudyPage() {
 
             <Reveal delay={0.08}>
               <div className="min-h-[280px] bg-[#15171A] p-8 text-white sm:p-10">
-                <p className="text-xs uppercase tracking-[0.24em] text-white/35">
+                <p className="text-xs uppercase tracking-[0.24em] text-neutral-400">
                   System
                 </p>
 
                 <div className="mt-24">
                   <p className="font-serif text-5xl">Nexora</p>
-                  <p className="mt-4 text-sm text-white/40">
+                  <p className="mt-4 text-sm text-neutral-300">
                     Adaptive technology
                   </p>
                 </div>
@@ -368,13 +368,13 @@ export default function NexoraCaseStudyPage() {
 
                 <h2 className="mt-8 max-w-3xl font-serif text-4xl leading-[1.08] tracking-[-0.035em] sm:text-5xl lg:text-7xl">
                   Complex systems.
-                  <span className="block text-white/30">
+                  <span className="block text-[#C9A45C]">
                     Clear interaction.
                   </span>
                 </h2>
               </div>
 
-              <p className="max-w-xl text-base leading-8 text-white/45 lg:justify-self-end">
+              <p className="max-w-xl text-base leading-8 text-neutral-300 lg:justify-self-end">
                 The interface brings automation, analytics and intelligent
                 workflows into one calm product environment designed around
                 focus, hierarchy and informed action.
@@ -406,7 +406,7 @@ export default function NexoraCaseStudyPage() {
                   05 / AI System
                 </p>
 
-                <p className="mt-6 max-w-sm text-sm leading-7 text-white/35">
+                <p className="mt-6 max-w-sm text-sm leading-7 text-neutral-400">
                   A connected intelligence layer designed to unify data,
                   automation and decision-making.
                 </p>
@@ -422,7 +422,7 @@ export default function NexoraCaseStudyPage() {
                   </span>
                 </h2>
 
-                <p className="mt-10 max-w-3xl text-base leading-8 text-white/50 sm:text-lg">
+                <p className="mt-10 max-w-3xl text-base leading-8 text-neutral-300 sm:text-lg">
                   Nexora connects intelligent workflows, data interpretation
                   and automation into one adaptive system capable of evolving
                   with changing products, teams and business needs.
@@ -432,7 +432,7 @@ export default function NexoraCaseStudyPage() {
                   {services.map((service) => (
                     <span
                       key={service}
-                      className="border border-white/15 px-4 py-3 text-xs uppercase tracking-[0.16em] text-white/45"
+                      className="border border-white/15 px-4 py-3 text-xs uppercase tracking-[0.16em] text-neutral-300"
                     >
                       {service}
                     </span>
@@ -468,7 +468,7 @@ export default function NexoraCaseStudyPage() {
           <Reveal delay={0.08}>
             <h2 className="mt-8 max-w-5xl font-serif text-5xl leading-[1.02] tracking-[-0.04em] sm:text-6xl lg:text-8xl">
               Intelligence transformed
-              <span className="block text-white/30">
+              <span className="block text-[#C9A45C]">
                 into a connected experience.
               </span>
             </h2>
@@ -478,21 +478,21 @@ export default function NexoraCaseStudyPage() {
             <div className="mt-16 grid gap-10 border-t border-white/10 pt-10 md:grid-cols-3">
               <div>
                 <p className="font-serif text-4xl text-[#C9A45C]">01</p>
-                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-white/40">
+                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-neutral-300">
                   Future-Focused Positioning
                 </p>
               </div>
 
               <div>
                 <p className="font-serif text-4xl text-[#C9A45C]">02</p>
-                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-white/40">
+                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-neutral-300">
                   Connected Product System
                 </p>
               </div>
 
               <div>
                 <p className="font-serif text-4xl text-[#C9A45C]">03</p>
-                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-white/40">
+                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-neutral-300">
                   Scalable AI Experience
                 </p>
               </div>

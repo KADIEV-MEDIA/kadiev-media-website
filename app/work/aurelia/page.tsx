@@ -108,7 +108,7 @@ export default function AureliaCaseStudyPage() {
                   elegance, restraint and timeless beauty.
                 </p>
 
-                <p className="max-w-lg text-sm leading-7 text-white/45 lg:justify-self-end">
+                <p className="max-w-lg text-sm leading-7 text-neutral-300 lg:justify-self-end">
                   Strategy, identity and digital storytelling designed to
                   transform a beauty concept into a distinctive luxury brand.
                 </p>
@@ -134,7 +134,7 @@ export default function AureliaCaseStudyPage() {
                       key={label}
                       className="grid grid-cols-[0.75fr_1.25fr] gap-6 py-5"
                     >
-                      <p className="text-xs uppercase tracking-[0.2em] text-white/30">
+                      <p className="text-xs uppercase tracking-[0.2em] text-neutral-400">
                         {label}
                       </p>
 
@@ -156,13 +156,13 @@ export default function AureliaCaseStudyPage() {
                 </p>
 
                 <div className="mt-12 grid gap-8 border-t border-white/10 pt-8 sm:grid-cols-2">
-                  <p className="text-base leading-8 text-white/45">
+                  <p className="text-base leading-8 text-neutral-300">
                     The concept required more than an elegant logo. It needed a
                     complete world — one capable of communicating quality,
                     confidence and sophistication across every touchpoint.
                   </p>
 
-                  <p className="text-base leading-8 text-white/45">
+                  <p className="text-base leading-8 text-neutral-300">
                     Our direction combines editorial restraint with cinematic
                     imagery, refined typography and a digital system designed
                     around premium storytelling.
@@ -188,10 +188,10 @@ export default function AureliaCaseStudyPage() {
               <div>
                 <h2 className="max-w-4xl font-serif text-4xl leading-[1.08] tracking-[-0.035em] sm:text-5xl lg:text-7xl">
                   Create desire
-                  <span className="block text-white/30">without excess.</span>
+                  <span className="block text-[#C9A45C]">without excess.</span>
                 </h2>
 
-                <p className="mt-10 max-w-2xl text-base leading-8 text-white/50 sm:text-lg">
+                <p className="mt-10 max-w-2xl text-base leading-8 text-neutral-300 sm:text-lg">
                   The luxury beauty category is saturated with familiar visual
                   codes. Aurelia needed to feel premium without becoming
                   predictable, minimal without becoming sterile, and modern
@@ -228,7 +228,7 @@ export default function AureliaCaseStudyPage() {
                   02 / Strategy
                 </p>
 
-                <p className="mt-6 max-w-sm text-sm leading-7 text-white/35">
+                <p className="mt-6 max-w-sm text-sm leading-7 text-neutral-400">
                   Building a brand system around emotional value rather than
                   decoration.
                 </p>
@@ -246,7 +246,7 @@ export default function AureliaCaseStudyPage() {
               </Reveal>
 
               <Reveal delay={0.14}>
-                <p className="mt-10 max-w-3xl text-base leading-8 text-white/50 sm:text-lg">
+                <p className="mt-10 max-w-3xl text-base leading-8 text-neutral-300 sm:text-lg">
                   The strategic idea was simple: Aurelia should never need to
                   shout. Every decision — from typography and composition to
                   photography and interaction — reinforces a sense of calm,
@@ -266,7 +266,7 @@ export default function AureliaCaseStudyPage() {
                         {principle.title}
                       </h3>
 
-                      <p className="mt-5 text-sm leading-7 text-white/40">
+                      <p className="mt-5 text-sm leading-7 text-neutral-300">
                         {principle.text}
                       </p>
                     </article>
@@ -291,12 +291,12 @@ export default function AureliaCaseStudyPage() {
             <div className="mt-10 grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
               <h2 className="font-serif text-5xl leading-[0.98] tracking-[-0.04em] sm:text-6xl lg:text-8xl">
                 Elegance,
-                <span className="block text-white/30">
+                <span className="block text-[#C9A45C]">
                   reduced to essence.
                 </span>
               </h2>
 
-              <p className="max-w-xl text-base leading-8 text-white/45">
+              <p className="max-w-xl text-base leading-8 text-neutral-300">
                 A restrained palette of obsidian, warm metallic tones and soft
                 neutrals creates the foundation. Typography and spacing carry
                 the identity, allowing product imagery to become the emotional
@@ -314,7 +314,7 @@ export default function AureliaCaseStudyPage() {
 
                 <div className="mt-24">
                   <p className="font-serif text-5xl text-[#C9A45C]">Aa</p>
-                  <p className="mt-4 text-sm text-white/35">
+                  <p className="mt-4 text-sm text-neutral-400">
                     Editorial elegance
                   </p>
                 </div>
@@ -364,13 +364,13 @@ export default function AureliaCaseStudyPage() {
 
                 <h2 className="mt-8 max-w-3xl font-serif text-4xl leading-[1.08] tracking-[-0.035em] sm:text-5xl lg:text-7xl">
                   Digital luxury
-                  <span className="block text-white/30">
+                  <span className="block text-[#C9A45C]">
                     with room to breathe.
                   </span>
                 </h2>
               </div>
 
-              <p className="max-w-xl text-base leading-8 text-white/45 lg:justify-self-end">
+              <p className="max-w-xl text-base leading-8 text-neutral-300 lg:justify-self-end">
                 The digital direction translates the brand into an immersive
                 editorial experience: deliberate pacing, generous whitespace,
                 cinematic imagery and subtle motion rather than unnecessary
@@ -405,7 +405,7 @@ export default function AureliaCaseStudyPage() {
                   05 / AI Creative System
                 </p>
 
-                <p className="mt-6 max-w-sm text-sm leading-7 text-white/35">
+                <p className="mt-6 max-w-sm text-sm leading-7 text-neutral-400">
                   Technology used as a creative multiplier, not as the creative
                   idea itself.
                 </p>
@@ -421,7 +421,7 @@ export default function AureliaCaseStudyPage() {
                   </span>
                 </h2>
 
-                <p className="mt-10 max-w-3xl text-base leading-8 text-white/50 sm:text-lg">
+                <p className="mt-10 max-w-3xl text-base leading-8 text-neutral-300 sm:text-lg">
                   Aurelia&apos;s creative system is designed to scale.
                   AI-assisted image direction, campaign exploration and content
                   production can expand the visual world while maintaining
@@ -432,7 +432,7 @@ export default function AureliaCaseStudyPage() {
                   {services.map((service) => (
                     <span
                       key={service}
-                      className="border border-white/15 px-4 py-3 text-xs uppercase tracking-[0.16em] text-white/45"
+                      className="border border-white/15 px-4 py-3 text-xs uppercase tracking-[0.16em] text-neutral-300"
                     >
                       {service}
                     </span>
@@ -468,7 +468,7 @@ export default function AureliaCaseStudyPage() {
           <Reveal delay={0.08}>
             <h2 className="mt-8 max-w-5xl font-serif text-5xl leading-[1.02] tracking-[-0.04em] sm:text-6xl lg:text-8xl">
               A brand world built
-              <span className="block text-white/30">to feel inevitable.</span>
+              <span className="block text-[#C9A45C]">to feel inevitable.</span>
             </h2>
           </Reveal>
 
@@ -476,21 +476,21 @@ export default function AureliaCaseStudyPage() {
             <div className="mt-16 grid gap-10 border-t border-white/10 pt-10 md:grid-cols-3">
               <div>
                 <p className="font-serif text-4xl text-[#C9A45C]">01</p>
-                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-white/40">
+                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-neutral-300">
                   Distinctive Positioning
                 </p>
               </div>
 
               <div>
                 <p className="font-serif text-4xl text-[#C9A45C]">02</p>
-                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-white/40">
+                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-neutral-300">
                   Scalable Identity
                 </p>
               </div>
 
               <div>
                 <p className="font-serif text-4xl text-[#C9A45C]">03</p>
-                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-white/40">
+                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-neutral-300">
                   Premium Digital System
                 </p>
               </div>
