@@ -65,20 +65,29 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    type: "website",
-    locale: "en_US",
-    siteName: "Kadiev Media",
-    title: "Kadiev Media | Premium AI-First Creative Studio",
-    description:
-      "Strategy, premium design, modern development and artificial intelligence combined to create distinctive digital experiences.",
-  },
+  type: "website",
+  locale: "en_US",
+  siteName: "Kadiev Media",
+  title: "Kadiev Media | Premium AI-First Creative Studio",
+  description:
+    "Strategy, premium design, modern development and artificial intelligence combined to create distinctive digital experiences.",
+  images: [
+    {
+      url: "/og/kadiev-media-og.png",
+      width: 1200,
+      height: 630,
+      alt: "Kadiev Media — Premium AI-First Creative Studio",
+    },
+  ],
+},
 
   twitter: {
-    card: "summary_large_image",
-    title: "Kadiev Media | Premium AI-First Creative Studio",
-    description:
-      "Strategy, premium design, modern development and artificial intelligence combined to create distinctive digital experiences.",
-  },
+  card: "summary_large_image",
+  title: "Kadiev Media | Premium AI-First Creative Studio",
+  description:
+    "Strategy, premium design, modern development and artificial intelligence combined to create distinctive digital experiences.",
+  images: ["/og/kadiev-media-og.png"],
+},
 
   robots: {
     index: true,

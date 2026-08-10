@@ -15,7 +15,7 @@ export default function StructuredData() {
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
-        __html: JSON.stringify(structuredData),
+        __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
       }}
     />
   );
