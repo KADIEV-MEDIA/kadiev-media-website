@@ -15,15 +15,15 @@ export default function Trusted() {
     <Section className="border-y border-neutral-900 bg-black py-12">
       <Container>
         <div className="text-center">
-          <p className="mb-10 text-sm uppercase tracking-[0.35em] text-neutral-500">
+          <p className="mb-10 text-sm uppercase tracking-[0.35em] text-neutral-400">
             Inspired by world-class brands
           </p>
 
-          <div className="grid grid-cols-2 gap-8 text-neutral-500 md:grid-cols-3 lg:grid-cols-6">
+          <div className="grid grid-cols-2 gap-8 text-neutral-400 md:grid-cols-3 lg:grid-cols-6">
             {companies.map((company) => (
               <div
                 key={company}
-                className="text-lg font-semibold transition hover:text-yellow-500"
+                className="text-lg font-semibold transition-colors duration-300 hover:text-yellow-500"
               >
                 {company}
               </div>

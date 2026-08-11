@@ -113,12 +113,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      translate="no"
-      suppressHydrationWarning
-      className={`notranslate ${cinzel.variable} ${inter.variable}`}
-    >
+  <html
+  lang="en"
+  translate="no"
+  data-scroll-behavior="smooth"
+  suppressHydrationWarning
+  className={`notranslate ${cinzel.variable} ${inter.variable}`}
+>
       <body>
         <StructuredData />
         {children}

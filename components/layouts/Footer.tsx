@@ -182,13 +182,13 @@ export default function Footer() {
                   hello@kadievmedia.com
                 </a>
 
-                <p className="mt-4 text-sm text-neutral-500">
+                <p className="mt-4 text-sm text-neutral-400">
                   Germany
                 </p>
               </div>
 
               <div className="mt-8">
-                <p className="text-[9px] uppercase tracking-[0.25em] text-neutral-600">
+                <p className="text-[9px] uppercase tracking-[0.25em] text-neutral-400">
                   Available for selected
                 </p>
 
@@ -201,7 +201,7 @@ export default function Footer() {
         </Reveal>
 
         {/* Bottom */}
-        <div className="flex flex-col gap-6 border-t border-white/[0.08] py-8 text-xs text-neutral-600 md:flex-row md:items-center md:justify-between">
+        <div className="flex flex-col gap-6 border-t border-white/[0.08] py-8 text-xs text-neutral-400 md:flex-row md:items-center md:justify-between">
           <p>
             © 2026 Kadiev Media. All rights reserved.
           </p>

@@ -61,96 +61,88 @@ export default function Hero() {
         <div className="relative z-10 flex min-h-[calc(100vh-5rem)] items-center py-12 sm:py-14 md:py-16">
           <div className="w-full max-w-[820px]">
             {/* Eyebrow */}
-            <Reveal delay={0.05}>
-              <div className="mb-5 flex items-center gap-3 sm:mb-6 sm:gap-4 md:mb-7">
-                <span className="h-px w-7 bg-[#C9A45C] sm:w-10" />
+            <div className="mb-5 flex items-center gap-3 sm:mb-6 sm:gap-4 md:mb-7">
+              <span className="h-px w-7 bg-[#C9A45C] sm:w-10" />
 
-                <p className="text-[8px] font-medium uppercase tracking-[0.22em] text-[#C9A45C] sm:text-[10px] sm:tracking-[0.3em] md:text-xs md:tracking-[0.35em]">
-                  Premium AI-First Creative Studio
-                </p>
-              </div>
-            </Reveal>
+              <p className="text-[8px] font-medium uppercase tracking-[0.22em] text-[#C9A45C] sm:text-[10px] sm:tracking-[0.3em] md:text-xs md:tracking-[0.35em]">
+                Premium AI-First Creative Studio
+              </p>
+            </div>
 
             {/* Headline */}
-            <Reveal delay={0.15}>
-              <h1
-                className="
-                  flex
-                  max-w-[20rem]
-                  flex-col
-                  gap-2
-                  font-[var(--font-cinzel)]
-                  text-[2.1rem]
-                  font-semibold
-                  tracking-[-0.025em]
-                  text-white
+            <h1
+              className="
+                flex
+                max-w-[20rem]
+                flex-col
+                gap-2
+                font-[var(--font-cinzel)]
+                text-[2.1rem]
+                font-semibold
+                tracking-[-0.025em]
+                text-white
 
-                  min-[390px]:max-w-[22rem]
-                  min-[390px]:text-[2.3rem]
+                min-[390px]:max-w-[22rem]
+                min-[390px]:text-[2.3rem]
 
-                  sm:max-w-[32rem]
-                  sm:gap-3
-                  sm:text-[2.9rem]
+                sm:max-w-[32rem]
+                sm:gap-3
+                sm:text-[2.9rem]
 
-                  md:max-w-[39rem]
-                  md:gap-3
-                  md:text-[3.5rem]
+                md:max-w-[39rem]
+                md:gap-3
+                md:text-[3.5rem]
 
-                  lg:max-w-[43rem]
-                  lg:gap-4
-                  lg:text-[4rem]
+                lg:max-w-[43rem]
+                lg:gap-4
+                lg:text-[4rem]
 
-                  xl:max-w-[47rem]
-                  xl:text-[4.4rem]
+                xl:max-w-[47rem]
+                xl:text-[4.4rem]
 
-                  2xl:max-w-[50rem]
-                  2xl:text-[4.7rem]
-                "
-              >
-                <span className="block leading-[1.05]">
-                  We Build
-                </span>
+                2xl:max-w-[50rem]
+                2xl:text-[4.7rem]
+              "
+            >
+              <span className="block leading-[1.05]">
+                We Build
+              </span>
 
-                <span className="block leading-[1.05]">
-                  Brands
-                </span>
+              <span className="block leading-[1.05]">
+                Brands
+              </span>
 
-                <span className="block leading-[1.05] text-[#C9A45C]">
-                  Designed for
-                </span>
+              <span className="block leading-[1.05] text-[#C9A45C]">
+                Designed for
+              </span>
 
-                <span className="block leading-[1.05]">
-                  the Future.
-                </span>
-              </h1>
-            </Reveal>
+              <span className="block leading-[1.05]">
+                the Future.
+              </span>
+            </h1>
 
             {/* Description */}
-            <Reveal delay={0.25}>
-              <p className="mt-8 max-w-[20rem] text-sm leading-7 text-neutral-200 min-[390px]:max-w-[22rem] sm:max-w-xl sm:text-base sm:leading-8 md:mt-9 md:max-w-2xl md:text-lg">
-                Strategy, premium design, modern development and artificial
-                intelligence combined to create distinctive digital
-                experiences.
-              </p>
-            </Reveal>
+            <p className="mt-8 max-w-[20rem] text-sm leading-7 text-neutral-200 min-[390px]:max-w-[22rem] sm:max-w-xl sm:text-base sm:leading-8 md:mt-9 md:max-w-2xl md:text-lg">
+              Strategy, premium design, modern development and artificial
+              intelligence combined to create distinctive digital
+              experiences.
+            </p>
 
             {/* CTA */}
-            <Reveal delay={0.35}>
-              <div className="mt-8 flex max-w-[20rem] flex-col gap-3 min-[390px]:max-w-[22rem] sm:mt-9 sm:max-w-none sm:flex-row sm:gap-4">
-                <Link href="/contact" className="w-full sm:w-auto">
-                  <Button>Start Your Project</Button>
-                </Link>
+            <div className="mt-8 flex max-w-[20rem] flex-col gap-3 min-[390px]:max-w-[22rem] sm:mt-9 sm:max-w-none sm:flex-row sm:gap-4">
+              <Link href="/contact" className="w-full sm:w-auto">
+                <Button>Start Your Project</Button>
+              </Link>
 
-                <Link href="/work" className="w-full sm:w-auto">
-                  <Button variant="secondary">
-                    Explore Our Work
-                  </Button>
-                </Link>
-              </div>
-            </Reveal>
+              <Link href="/work" className="w-full sm:w-auto">
+                <Button variant="secondary">
+                  Explore Our Work
+                </Button>
+              </Link>
+            </div>
 
             {/* Stats */}
-            <Reveal delay={0.45}>
+            <Reveal delay={0.2}>
               <div className="mt-12 grid max-w-[20rem] grid-cols-3 border-t border-white/[0.1] pt-6 min-[390px]:max-w-[22rem] sm:max-w-xl sm:pt-7 md:max-w-2xl">
                 <div className="pr-3">
                   <p className="text-xl font-semibold text-white sm:text-2xl">

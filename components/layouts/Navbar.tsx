@@ -99,7 +99,7 @@ export default function Navbar() {
                 src="/brand/kadiev-media-logo.png"
                 alt="Kadiev Media"
                 fill
-                priority
+                loading="eager"
                 sizes="44px"
                 className="scale-[1.2] object-cover object-center"
               />
