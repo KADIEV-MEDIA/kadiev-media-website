@@ -113,12 +113,12 @@ export default function Hero() {
               </span>
 
               <span className="block leading-[1.05] text-[#C9A45C]">
-                Designed for
-              </span>
+  Designed for
+</span>
 
-              <span className="block leading-[1.05]">
-                the Future.
-              </span>
+<span className="block leading-[1.05] text-[#C9A45C]">
+  the Future.
+</span>
             </h1>
 
             {/* Description */}
