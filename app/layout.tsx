@@ -1,3 +1,5 @@
+import CookieConsent from "@/components/analytics/CookieConsent";
+import AnalyticsGate from "@/components/analytics/AnalyticsGate";
 import type { Metadata } from "next";
 import { Cinzel, Inter } from "next/font/google";
 import { siteConfig } from "@/lib/site";
@@ -123,7 +125,11 @@ export default function RootLayout({
       <body>
         <StructuredData />
         {children}
+        <CookieConsent />
+<AnalyticsGate />
       </body>
+
+    
     </html>
   );
 }
