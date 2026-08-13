@@ -44,7 +44,7 @@ export async function POST(request: Request) {
     const { data, error } = await resend.emails.send({
       from: "Kadiev Media <contact@kadievmedia.com>",
 
-      to: ["yavor693@gmail.com"],
+      to: ["kadievmedia.support@gmail.com"],
 
       replyTo: email,
 
