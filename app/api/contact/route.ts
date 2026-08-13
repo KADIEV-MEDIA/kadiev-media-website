@@ -42,13 +42,8 @@ export async function POST(request: Request) {
     }
 
     const { data, error } = await resend.emails.send({
-      // Resend's test sender. We'll replace this with the Kadiev Media
-      // domain after domain verification.
-      from: "Kadiev Media <onboarding@resend.dev>",
+      from: "Kadiev Media <contact@kadievmedia.com>",
 
-      // IMPORTANT:
-      // During Resend testing, use the email address connected to
-      // your Resend account here.
       to: ["yavor693@gmail.com"],
 
       replyTo: email,
