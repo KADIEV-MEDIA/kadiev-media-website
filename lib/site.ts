@@ -1,4 +1,4 @@
-const fallbackUrl = "http://localhost:3000";
+const fallbackUrl = "https://www.kadievmedia.com";
 
 export const siteConfig = {
   name: "Kadiev Media",
