@@ -14,16 +14,29 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
+    type: "article",
+    locale: "en_US",
+    url: "/work/aurelia",
+    siteName: "Kadiev Media",
     title: "Aurelia — Luxury Beauty | Kadiev Media",
     description:
       "A premium beauty identity and digital experience shaped around elegance, restraint and timeless luxury.",
-    url: "/work/aurelia",
+    images: [
+      {
+        url: "/projects/aurelia/hero.png",
+        width: 1200,
+        height: 630,
+        alt: "Aurelia — Luxury Beauty case study by Kadiev Media",
+      },
+    ],
   },
 
   twitter: {
+    card: "summary_large_image",
     title: "Aurelia — Luxury Beauty | Kadiev Media",
     description:
       "A premium beauty identity and digital experience shaped around elegance, restraint and timeless luxury.",
+    images: ["/projects/aurelia/hero.png"],
   },
 };
 

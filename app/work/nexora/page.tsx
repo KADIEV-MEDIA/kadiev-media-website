@@ -8,23 +8,35 @@ export const metadata: Metadata = {
 
   description:
     "Explore Nexora, a Kadiev Media AI technology case study combining brand strategy, visual identity, digital product design and intelligent AI systems.",
-    
 
   alternates: {
     canonical: "/work/nexora",
   },
 
   openGraph: {
+    type: "article",
+    locale: "en_US",
+    url: "/work/nexora",
+    siteName: "Kadiev Media",
     title: "Nexora — AI Technology | Kadiev Media",
     description:
       "A future-focused AI brand and digital system designed around intelligence, connection and adaptive technology.",
-    url: "/work/nexora",
+    images: [
+      {
+        url: "/projects/nexora/hero.png",
+        width: 1200,
+        height: 630,
+        alt: "Nexora — AI Technology case study by Kadiev Media",
+      },
+    ],
   },
 
   twitter: {
+    card: "summary_large_image",
     title: "Nexora — AI Technology | Kadiev Media",
     description:
       "A future-focused AI brand and digital system designed around intelligence, connection and adaptive technology.",
+    images: ["/projects/nexora/hero.png"],
   },
 };
 

@@ -12,16 +12,29 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "/services",
+    siteName: "Kadiev Media",
     title: "Services | Kadiev Media",
     description:
       "Strategy, design, development and AI combined into premium digital systems for ambitious brands.",
-    url: "/services",
+    images: [
+      {
+        url: "/og/kadiev-media-og.png",
+        width: 1200,
+        height: 630,
+        alt: "Kadiev Media — Premium AI-First Creative Studio",
+      },
+    ],
   },
 
   twitter: {
+    card: "summary_large_image",
     title: "Services | Kadiev Media",
     description:
       "Strategy, design, development and AI combined into premium digital systems for ambitious brands.",
+    images: ["/og/kadiev-media-og.png"],
   },
 };
 const services = [

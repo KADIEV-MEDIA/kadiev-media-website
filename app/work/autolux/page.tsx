@@ -9,20 +9,34 @@ export const metadata: Metadata = {
   description:
     "Explore AutoLux, a Kadiev Media luxury automotive case study combining brand strategy, visual identity, premium web design and performance-driven creative direction.",
 
-    alternates: {
-  canonical: "/work/autolux",
-},
+  alternates: {
+    canonical: "/work/autolux",
+  },
+
   openGraph: {
+    type: "article",
+    locale: "en_US",
+    url: "/work/autolux",
+    siteName: "Kadiev Media",
     title: "AutoLux — Luxury Automotive | Kadiev Media",
     description:
       "A high-performance automotive identity and digital experience created around power, precision and uncompromising luxury.",
-      url: "/work/autolux",
+    images: [
+      {
+        url: "/projects/autolux/hero.png",
+        width: 1200,
+        height: 630,
+        alt: "AutoLux — Luxury Automotive case study by Kadiev Media",
+      },
+    ],
   },
 
   twitter: {
+    card: "summary_large_image",
     title: "AutoLux — Luxury Automotive | Kadiev Media",
     description:
       "A high-performance automotive identity and digital experience created around power, precision and uncompromising luxury.",
+    images: ["/projects/autolux/hero.png"],
   },
 };
 

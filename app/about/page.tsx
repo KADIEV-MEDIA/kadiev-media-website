@@ -11,18 +11,32 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "/about",
+    siteName: "Kadiev Media",
     title: "About | Kadiev Media",
     description:
       "An AI-first creative studio where strategy, human creativity, technology and intelligent production work as one connected system.",
-    url: "/about",
+    images: [
+      {
+        url: "/og/kadiev-media-og.png",
+        width: 1200,
+        height: 630,
+        alt: "Kadiev Media — Premium AI-First Creative Studio",
+      },
+    ],
   },
 
   twitter: {
+    card: "summary_large_image",
     title: "About | Kadiev Media",
     description:
       "An AI-first creative studio where strategy, human creativity, technology and intelligent production work as one connected system.",
+    images: ["/og/kadiev-media-og.png"],
   },
 };
+
 const principles = [
   {
     number: "01",

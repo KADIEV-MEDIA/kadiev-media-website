@@ -9,22 +9,34 @@ export const metadata: Metadata = {
   description:
     "Explore NordHaus, a Kadiev Media architecture and interior case study combining brand strategy, visual identity, premium web design and architectural content.",
 
-    
   alternates: {
     canonical: "/work/nordhaus",
   },
 
   openGraph: {
+    type: "article",
+    locale: "en_US",
+    url: "/work/nordhaus",
+    siteName: "Kadiev Media",
     title: "NordHaus — Architecture & Interior | Kadiev Media",
     description:
       "A refined architectural identity and digital experience built around space, materiality, structure and modern restraint.",
-    url: "/work/nordhaus",
+    images: [
+      {
+        url: "/projects/nordhaus/hero.png",
+        width: 1200,
+        height: 630,
+        alt: "NordHaus — Architecture & Interior case study by Kadiev Media",
+      },
+    ],
   },
 
   twitter: {
+    card: "summary_large_image",
     title: "NordHaus — Architecture & Interior | Kadiev Media",
     description:
       "A refined architectural identity and digital experience built around space, materiality, structure and modern restraint.",
+    images: ["/projects/nordhaus/hero.png"],
   },
 };
 

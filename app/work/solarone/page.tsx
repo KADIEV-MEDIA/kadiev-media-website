@@ -9,21 +9,34 @@ export const metadata: Metadata = {
   description:
     "Explore SolarOne, a Kadiev Media clean energy case study combining brand strategy, visual identity, digital experience and intelligent energy systems.",
 
-alternates: {
-    canonical: "/work/solarone"
+  alternates: {
+    canonical: "/work/solarone",
   },
 
   openGraph: {
+    type: "article",
+    locale: "en_US",
+    url: "/work/solarone",
+    siteName: "Kadiev Media",
     title: "SolarOne — Clean Energy | Kadiev Media",
     description:
       "A future-facing clean energy identity designed to make solar technology feel intelligent, desirable and built for scale.",
-      url: "/work/solarone",
+    images: [
+      {
+        url: "/projects/solarone/hero.png",
+        width: 1200,
+        height: 630,
+        alt: "SolarOne — Clean Energy case study by Kadiev Media",
+      },
+    ],
   },
 
   twitter: {
+    card: "summary_large_image",
     title: "SolarOne — Clean Energy | Kadiev Media",
     description:
       "A future-facing clean energy identity designed to make solar technology feel intelligent, desirable and built for scale.",
+    images: ["/projects/solarone/hero.png"],
   },
 };
 

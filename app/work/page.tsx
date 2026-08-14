@@ -2,21 +2,38 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Work",
+
   description:
     "Explore selected Kadiev Media projects across luxury branding, digital experiences, web design and AI-powered creative systems.",
+
   alternates: {
     canonical: "/work",
   },
+
   openGraph: {
-    title: "Work | Kadiev Media",
-    description:
-      "Selected brand identities, digital experiences and AI-powered creative systems created by Kadiev Media.",
+    type: "website",
+    locale: "en_US",
     url: "/work",
-  },
-  twitter: {
+    siteName: "Kadiev Media",
     title: "Work | Kadiev Media",
     description:
       "Selected brand identities, digital experiences and AI-powered creative systems created by Kadiev Media.",
+    images: [
+      {
+        url: "/og/kadiev-media-og.png",
+        width: 1200,
+        height: 630,
+        alt: "Kadiev Media — Premium AI-First Creative Studio",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Work | Kadiev Media",
+    description:
+      "Selected brand identities, digital experiences and AI-powered creative systems created by Kadiev Media.",
+    images: ["/og/kadiev-media-og.png"],
   },
 };
 import Image from "next/image";

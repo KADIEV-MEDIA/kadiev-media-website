@@ -14,16 +14,29 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
+    type: "article",
+    locale: "en_US",
+    url: "/work/fitlab",
+    siteName: "Kadiev Media",
     title: "FitLab — AI Fitness | Kadiev Media",
     description:
       "An intelligent fitness platform combining personalized training, performance data and a bold digital experience.",
-    url: "/work/fitlab",
+    images: [
+      {
+        url: "/projects/fitlab/hero.png",
+        width: 1200,
+        height: 630,
+        alt: "FitLab — AI Fitness case study by Kadiev Media",
+      },
+    ],
   },
 
   twitter: {
+    card: "summary_large_image",
     title: "FitLab — AI Fitness | Kadiev Media",
     description:
       "An intelligent fitness platform combining personalized training, performance data and a bold digital experience.",
+    images: ["/projects/fitlab/hero.png"],
   },
 };
 
