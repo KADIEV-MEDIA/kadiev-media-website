@@ -19,7 +19,29 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
+    type: "website",
+    locale: "en_US",
     url: "/",
+    siteName: "Kadiev Media",
+    title: "Kadiev Media | Premium AI-First Creative Studio",
+    description:
+  "Premium strategy, design, development and AI solutions for distinctive brands and digital experiences.",
+    images: [
+      {
+        url: "/og/kadiev-media-og.png",
+        width: 1200,
+        height: 630,
+        alt: "Kadiev Media — Premium AI-First Creative Studio",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Kadiev Media | Premium AI-First Creative Studio",
+    description:
+  "Premium strategy, design, development and AI solutions for distinctive brands and digital experiences.",
+    images: ["/og/kadiev-media-og.png"],
   },
 };
 
